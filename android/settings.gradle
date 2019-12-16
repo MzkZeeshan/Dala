@@ -1,0 +1,3 @@
+rootProject.name = 'Dala'
+
+include ':app'
