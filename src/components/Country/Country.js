@@ -93,7 +93,7 @@ export default class Country extends Component {
           </ScrollView>
         </View>
 
-        <View style={CountryStyle.viewBoxTop}>
+        <View style={CountryStyle.viewBoxB}>
           <TouchableOpacity
             style={CountryStyle.ButtonStyle}
             onPress={() => {

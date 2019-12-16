@@ -53,6 +53,8 @@ export default class Main extends Component {
             }}>
             <Text style={MainStyle.link}>Change Language </Text>
           </TouchableOpacity>
+        </View >
+        <View style={MainStyle.viewBoxTop}>
           <TouchableOpacity
             style={MainStyle.ButtonStyle}
             onPress={() => {
@@ -60,7 +62,7 @@ export default class Main extends Component {
             }}>
             <Text style={MainStyle.Txt}>Continue</Text>
           </TouchableOpacity>
-        </View>
+            </View>
       </ScrollView>
     );
   }

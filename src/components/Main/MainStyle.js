@@ -21,7 +21,7 @@ export default MainStyle = StyleSheet.create({
   },
   bg: {
     flex: 1,
-    width: "100%",
+    // width: "100%",
     height: height,
   },
 
@@ -43,6 +43,10 @@ export default MainStyle = StyleSheet.create({
     width: imageWidth,
     height: 200,
     resizeMode: 'contain',
+  },
+  viewBoxTop: {
+    justifyContent: 'flex-end',
+    alignItems: 'center',
   },
   ButtonStyle: {
     backgroundColor: '#07adb9',

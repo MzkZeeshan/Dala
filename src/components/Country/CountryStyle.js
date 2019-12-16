@@ -45,6 +45,10 @@ export default CountryStyle = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  viewBoxB: {
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
   viewBoxTop1: {
     justifyContent: 'center',
     alignItems: 'center',
@@ -90,9 +94,11 @@ export default CountryStyle = StyleSheet.create({
     justifyContent: 'space-between',
   },
   ButtonStyle: {
+
     backgroundColor: '#07adb9',
     width: '90%',
     alignItems: 'center',
+    alignSelf: 'center',
     color: 'blue',
     borderRadius: 5,
     height: 50,
