@@ -8,6 +8,7 @@ const height = Dimensions.get('window').height;
 export default LoginStyle = StyleSheet.create({
   View: {
     alignItems: 'center',
+  // marginTop:-40,
     flex:1
   },
 
@@ -16,6 +17,9 @@ export default LoginStyle = StyleSheet.create({
   },
   Icon: {
     fontSize: 24,
+  },
+  end: {
+    color:"#07adb9" ,
   },
   subH: {
     fontSize: 14,
@@ -63,6 +67,8 @@ color:'#b2b2b2',
     borderRadius: 10,
     shadowRadius: 5,
     alignItems: 'center',
+    shadowColor: "#000",
+    elevation: 3,
     // position: 'absolute',
     // top: 5,
     // zIndex:1
@@ -102,5 +108,20 @@ elevation: 3,
     marginVertical: 10,
     justifyContent: 'center',
     paddingVertical: 15,
+  marginBottom:-20
+  
+},
+ButtonStylefb: {
+  marginTop:30,
+    backgroundColor: '#2E87BF',
+    width: '80%',
+    alignItems: 'center',
+    color: 'blue',
+    borderRadius: 5,
+    alignSelf:"center",
+    marginVertical: 10,
+    justifyContent: 'center',
+    paddingVertical: 15,
+
   },
 });

@@ -23,13 +23,12 @@ export default class Login extends Component {
   }
   render() {
     return (
-      <View style={{ flex: 1 }}>
-
-        <ImageBackground style={{ flex: 0.6 }}
-          resizeMode="stretch"
+      <ScrollView>
+        <ImageBackground style={{ flex: 1 }}
+          resizeMode="cover"
 
           // resizeMode="contain"
-          source={require('../../assets/images/2.png')}>
+          source={require('../../assets/images/fix.png')}>
           <TouchableOpacity
             onPress={() => {
               this.props.navigation.navigate('Turnonnoti');
@@ -43,14 +42,8 @@ export default class Login extends Component {
             />
           </View>
 
-        </ImageBackground>
-        <View style={{ flex: 1 }}>
-        </View>
-        <View style={{ position: "absolute", top: "25%", width: "100%",backgroundColor:"re" }}>
-
-              <ScrollView style={{ width: "100%" }}>
-
-
+         
+              
           <View style={LoginStyle.View}>
             <View style={LoginStyle.Main}>
                   <Text style={LoginStyle.H1}>Create your account</Text>
@@ -109,14 +102,14 @@ export default class Login extends Component {
                     </View>
                   </View>
 
-                  <View style={{ paddingHorizontal: 1 }}>
+                  <View style={{ paddingHorizontal: 1 ,paddingVertical:15}}>
                     <Text style={LoginStyle.subH}>
                       You can change your preferences at any time, find out how in our privacy policy.
             </Text>
                   </View>
 
                  
-
+                  
                   <TouchableOpacity
                     style={LoginStyle.ButtonStyle}
                     onPress={() => {
@@ -125,23 +118,31 @@ export default class Login extends Component {
                     <Text style={LoginStyle.Txt}>Create your Account</Text>
                   </TouchableOpacity>
 
-
-
-
+                    
                     </View>
-                <Text>By log in you agree to Dala3 Activities Authority
-                  Condition of use and Privacy Policy
-                </Text> 
+              
+                  <TouchableOpacity
+                    style={LoginStyle.ButtonStylefb}
+                    onPress={() => {
+                      this.props.navigation.navigate('Turnonnoti');
+                    }}>
+                    <Text style={LoginStyle.Txt}>Continue With Facebook</Text>
+                  </TouchableOpacity>
         
                   </View>
+                <View style={{paddingVertical:10,paddingHorizontal:20,alignItems:"center",}}> 
+                <Text>By log in you agree to Dala3 Activities Authority
+                <Text  style={LoginStyle.end}>  Condition of</Text> use and <Text  style={LoginStyle.end}>Privacy Policy</Text>
+                </Text> 
+
+                </View>
+      
+                  </ImageBackground>
+
         </ScrollView>
-        </View>
 
 
 
-
-
-      </View>
     );
   }
 }
