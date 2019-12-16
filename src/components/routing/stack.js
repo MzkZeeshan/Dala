@@ -11,6 +11,7 @@ import TurnOnNoti from '../TurnOnNoti/Turnonnoti';
 import Startexplore from '../StartExplore/Startexplore';
 import Rafa from '../Rafawater/Rafa';
 import Login from '../Login/Login';
+import Personal from '../PersonalInfo/Personal';
 
 // console.disableYellowBox = true;
 
@@ -89,6 +90,12 @@ export const MainStack = StackNavigator(
     },
     Login: {
       screen: Login,
+      navigationOptions: {
+        header: null,
+      },
+    },
+    Personal: {
+      screen: Personal,
       navigationOptions: {
         header: null,
       },
