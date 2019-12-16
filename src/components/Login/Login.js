@@ -113,7 +113,7 @@ export default class Login extends Component {
                   <TouchableOpacity
                     style={LoginStyle.ButtonStyle}
                     onPress={() => {
-                      this.props.navigation.navigate('Turnonnoti');
+                      this.props.navigation.navigate('Personal');
                     }}>
                     <Text style={LoginStyle.Txt}>Create your Account</Text>
                   </TouchableOpacity>
@@ -124,13 +124,13 @@ export default class Login extends Component {
                   <TouchableOpacity
                     style={LoginStyle.ButtonStylefb}
                     onPress={() => {
-                      this.props.navigation.navigate('Turnonnoti');
+                      // this.props.navigation.navigate('Turnonnoti');
                     }}>
                     <Text style={LoginStyle.Txt}>Continue With Facebook</Text>
                   </TouchableOpacity>
         
                   </View>
-                <View style={{paddingVertical:10,paddingHorizontal:20,alignItems:"center",}}> 
+                <View style={{paddingVertical:10,paddingHorizontal:20,alignItems:"center"}}> 
                 <Text>By log in you agree to Dala3 Activities Authority
                 <Text  style={LoginStyle.end}>  Condition of</Text> use and <Text  style={LoginStyle.end}>Privacy Policy</Text>
                 </Text> 

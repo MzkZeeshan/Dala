@@ -20,7 +20,7 @@ class SplashScreen extends React.Component {
       // this.props.navigation.navigate('Main');
       const resetAction = NavigationActions.reset({
         index: 0,
-        actions: [NavigationActions.navigate({ routeName: 'Personal' })],
+        actions: [NavigationActions.navigate({ routeName: 'Main' })],
       });
       this.props.navigation.dispatch(resetAction);
     }
