@@ -122,7 +122,7 @@ export const MainStack = StackNavigator(
     },
   },
   {
-    initialRouteName: 'SplashScreen',
+    initialRouteName: 'MyBooking',
     navigationOptions: {
       headerTitle: <View style={styles.headerLogoContainer}></View>,
       headerTintColor: headerTintColor,

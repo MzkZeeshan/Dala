@@ -38,13 +38,13 @@ export default class MyBooking extends Component {
 
             <View style={BookStyle.head}>
                 <View style={BookStyle.headsub}> 
-                    <Icon name='calendar'  type="AntDesign" />
-                  <Text style={BookStyle.subtxt}>  Bookings</Text>
+                    <Icon name='calendar' style={{color:"#07adb9"}}  type="AntDesign" />
+                  <Text style={BookStyle.subtxt}>Bookings</Text>
 
                 </View>
                 <View style={BookStyle.headsub}> 
-                <Icon name='wallet'  type="AntDesign" />
-                  <Text style={BookStyle.subtxt}>  Wallet</Text>
+                <Icon name='wallet'  style={{color:"#07adb9"}}  type="AntDesign" />
+                  <Text style={BookStyle.subtxt}>Wallet</Text>
 
                 </View>
 

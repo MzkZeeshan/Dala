@@ -9,10 +9,10 @@ export default BookStyle = StyleSheet.create({
   },
   subtxt: {
     color:"#07adb9",
-    alignSelf:"center"
+    // alignSelf:"center"
   },
   headsub: {
-    alignSelf:"center",
+    alignItems:"center",
     paddingHorizontal:20,
     paddingVertical:10,
     justifyContent: 'center',
@@ -23,13 +23,11 @@ export default BookStyle = StyleSheet.create({
   head: {
     backgroundColor: '#fff',
     width: '90%',
-    alignItems: 'center',
-    color: 'blue',
-    borderRadius: 5,
-    height: 50,
+    borderRadius: 10,
     marginVertical: 10,
     justifyContent: 'space-between',
-    flexDirection:"row"
+    flexDirection:"row",
+    marginTop:-10
   },
   
 });

@@ -151,14 +151,14 @@ export default class Personal extends Component {
                   <TouchableOpacity
                     style={perStyle.ButtonStylefb}
                     onPress={() => {
-                      this.props.navigation.navigate('Turnonnoti');
+                      // this.props.navigation.navigate('Turnonnoti');
                     }}>
                     <Text style={perStyle.Txt}>Continue With Facebook</Text>
                   </TouchableOpacity>
                   <TouchableOpacity
                     style={perStyle.ButtonStylegoogle}
                     onPress={() => {
-                      this.props.navigation.navigate('Turnonnoti');
+                      // this.props.navigation.navigate('Turnonnoti');
                     }}>
                     <Text style={perStyle.Txt}>Continue With Email</Text>
                   </TouchableOpacity>
