@@ -12,6 +12,7 @@ import Startexplore from '../StartExplore/Startexplore';
 import Rafa from '../Rafawater/Rafa';
 import Login from '../Login/Login';
 import Personal from '../PersonalInfo/Personal';
+import Location from '../Location/Location';
 
 // console.disableYellowBox = true;
 
@@ -100,6 +101,12 @@ export const MainStack = StackNavigator(
         header: null,
       },
     },
+    Location: {
+      screen: Location,
+      navigationOptions: {
+        header: null,
+      },
+    },
     SplashScreen: {
       screen: SplashScreen,
       navigationOptions: {
@@ -108,7 +115,7 @@ export const MainStack = StackNavigator(
     },
   },
   {
-    initialRouteName: 'SplashScreen',
+    initialRouteName: 'Location',
     navigationOptions: {
       headerTitle: <View style={styles.headerLogoContainer}></View>,
       headerTintColor: headerTintColor,
