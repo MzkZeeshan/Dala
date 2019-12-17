@@ -7,29 +7,24 @@ const height = Dimensions.get('window').height / 1.9;
 
 export default ShareStyle = StyleSheet.create({
   View: {
-    // height: '30%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    flex:1
-  },
-  ViewCountry: {
-    // height: '30%',
-    backgroundColor: 'gray',
     justifyContent: 'center',
     alignItems: 'center',
   },
+
   viewBoxB: {
-    position:"relative",
+    width:"100%",
+    justifyContent: 'flex-end',
     alignItems: 'center',
+    bottom:0,
+    position:"absolute"
   },
 
   Txt: {
     color:"#fff"
   },
   bg: {
-    flex: 1,
-    // width: '100%',
-    // height: height,
+    width: width,
+    height: height,
   },
 
   viewBoxTop: {
@@ -54,31 +49,9 @@ export default ShareStyle = StyleSheet.create({
     marginBottom: 10,
   },
 
-  countryText: {
-    fontSize: 16,
-    paddingVertical: 10,
-    paddingHorizontal: 5,
-    color: 'gray',
-  },
 
-  countryView: {
-    marginTop: 2,
-    flexDirection: 'row',
-    borderColor: '#07adb9',
-    borderWidth: 0.5,
-    backgroundColor: 'white',
-    width: '90%',
-    borderRadius: 5,
-    paddingHorizontal: 10,
-    justifyContent: 'space-between',
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 3,
-    },
-    shadowRadius: 5,
-    shadowOpacity: 1.0,
-  },
+
+
   ButtonStyle: {
     backgroundColor: '#07adb9',
     width: '90%',
@@ -109,11 +82,5 @@ export default ShareStyle = StyleSheet.create({
     borderBottomWidth: 5,
     borderRadius: 5,
   },
-  borderlow: {
-    width: '30%',
-    marginTop: 5,
-    borderBottomColor: '#07adb9',
-    borderBottomWidth: 5,
-    borderRadius: 5,
-  },
+
 });

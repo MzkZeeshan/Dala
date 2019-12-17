@@ -41,7 +41,7 @@ export default class Country extends Component {
     // const { navigate } = this.props.navigation;
 
     return (
-      <ScrollView>
+      <View style={{flex:1}}>
         <ImageBackground
           style={CountryStyle.bg}
           resizeMode="stretch"
@@ -61,10 +61,10 @@ export default class Country extends Component {
         </ImageBackground>
         <View style={CountryStyle.View}>
           <Text style={CountryStyle.Text}>Change Country? </Text>
-          <ScrollView style={CountryStyle.scroll}>
            
             
-<View>
+{/* <View style={CountryStyle.scroll}> */}
+          <ScrollView style={CountryStyle.scroll}>
 
             <View style={CountryStyle.countryView}>
               <Text style={CountryStyle.countryText}>Abu Dhabi</Text>
@@ -94,9 +94,16 @@ export default class Country extends Component {
                 name="add-circle"
               />
             </View>
-</View>
+            <View style={CountryStyle.countryView}>
+              <Text style={CountryStyle.countryText}>Fujairah</Text>
+              <Icon
+               style={{fontSize: 18, alignSelf: 'center', paddingVertical: 10,color:"gray"}}
+                name="add-circle"
+              />
+            </View>
           </ScrollView>
-        </View>
+</View>
+        {/* </View> */}
 
         <View style={CountryStyle.viewBoxB}>
           <TouchableOpacity
@@ -107,7 +114,7 @@ export default class Country extends Component {
             <Text style={CountryStyle.Txt}>Continue</Text>
           </TouchableOpacity>
         </View>
-      </ScrollView>
+      </View>
     );
   }
 }

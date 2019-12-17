@@ -26,13 +26,16 @@ export default LangStyle = StyleSheet.create({
     color: '#fff',
   },
   bg: {
-    flex: 1,
-    // width: width,
-    // height: height,
+    // flex: 1,
+    width: width,
+    height: height,
   },
   viewBoxB: {
+    width:"100%",
     justifyContent: 'flex-end',
     alignItems: 'center',
+    bottom:0,
+    position:"absolute"
   },
 
   Text: {

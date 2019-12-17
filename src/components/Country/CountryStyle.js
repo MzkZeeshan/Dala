@@ -12,7 +12,7 @@ export default CountryStyle = StyleSheet.create({
     alignItems: 'center',
   },
   scroll: {
-    height: 145,
+    height: 160,
     marginHorizontal: 15,
   },
   ViewCountry: {
@@ -30,9 +30,9 @@ export default CountryStyle = StyleSheet.create({
     color: '#fff',
   },
   bg: {
-    flex: 1,
-    // width: width,
-    // height: height,
+    // flex: 1,
+    width: width,
+    height: height,
   },
 
   Text: {
@@ -46,8 +46,11 @@ export default CountryStyle = StyleSheet.create({
     alignItems: 'center',
   },
   viewBoxB: {
+    width:"100%",
     justifyContent: 'flex-end',
     alignItems: 'center',
+    bottom:0,
+    position:"absolute"
   },
   viewBoxTop1: {
     justifyContent: 'center',

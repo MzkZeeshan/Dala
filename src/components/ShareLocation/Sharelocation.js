@@ -41,7 +41,7 @@ export default class ShareLocation extends Component {
     // const { navigate } = this.props.navigation;
 
     return (
-      <ScrollView style={{flex:1}}>
+      <View style={{flex:1}}>
         <ImageBackground
           style={ShareStyle.bg}
           resizeMode="stretch"
@@ -80,7 +80,7 @@ export default class ShareLocation extends Component {
             <Text style={ShareStyle.Txt}>Share location</Text>
           </TouchableOpacity>
         </View>
-      </ScrollView>
+      </View>
     );
   }
 }

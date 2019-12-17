@@ -41,7 +41,7 @@ export default class ChangeLanguage extends Component {
     // const { navigate } = this.props.navigation;
 
     return (
-      <ScrollView style={{flex: 1}}>
+      <View style={{flex: 1}}>
         <ImageBackground
           style={LangStyle.bg}
           resizeMode="stretch"
@@ -60,7 +60,7 @@ export default class ChangeLanguage extends Component {
           </View>
         </ImageBackground>
         <View style={LangStyle.View}>
-          <Text style={LangStyle.Text}>Change Country? </Text>
+          <Text style={LangStyle.Text}>Change Labnguage? </Text>
           <View style={LangStyle.countryView}>
             <View style={{flexDirection: 'row'}}>
               <Image
@@ -94,16 +94,16 @@ export default class ChangeLanguage extends Component {
             </View>
           </View>
         </View>
-          <View style={LangStyle.viewBoxB}>
-          <TouchableOpacity
-            style={LangStyle.ButtonStyle}
-            onPress={() => {
-              this.props.navigation.navigate('ShareLocation');
-            }}>
-            <Text style={LangStyle.Txt}>Continue</Text>
-          </TouchableOpacity>
-        </View>
-      </ScrollView>
+                <View style={LangStyle.viewBoxB}>
+                <TouchableOpacity
+                  style={LangStyle.ButtonStyle}
+                  onPress={() => {
+                    this.props.navigation.navigate('ShareLocation');
+                  }}>
+                  <Text style={LangStyle.Txt}>Continue</Text>
+                </TouchableOpacity>
+              </View>
+      </View>
     );
   }
 }
