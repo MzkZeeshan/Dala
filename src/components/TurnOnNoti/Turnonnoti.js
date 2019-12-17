@@ -67,7 +67,7 @@ export default class ShareLocation extends Component {
             onPress={() => {
               this.props.navigation.navigate('ShareLocation');
             }}>
-            <Text style={Turnstyle.Txt}>Share location</Text>
+            <Text style={Turnstyle.Txt}>Turn on notifaction</Text>
           </TouchableOpacity>
           <View style={Turnstyle.borderlow}></View>
         </View>

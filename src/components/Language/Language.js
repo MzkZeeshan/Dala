@@ -72,7 +72,7 @@ export default class ChangeLanguage extends Component {
             </View>
             <View>
               <Icon
-                style={{fontSize: 18, alignSelf: 'center', paddingVertical: 10}}
+                style={{fontSize: 18, alignSelf: 'center', paddingVertical: 10,color:"gray"}}
                 name="add-circle"
               />
             </View>
@@ -88,12 +88,13 @@ export default class ChangeLanguage extends Component {
             </View>
             <View>
               <Icon
-                style={{fontSize: 18, alignSelf: 'center', paddingVertical: 10}}
+                  style={{fontSize: 18, alignSelf: 'center', paddingVertical: 10,color:"gray"}}
                 name="add-circle"
               />
             </View>
           </View>
-
+        </View>
+          <View style={LangStyle.viewBoxB}>
           <TouchableOpacity
             style={LangStyle.ButtonStyle}
             onPress={() => {

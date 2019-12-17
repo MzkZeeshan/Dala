@@ -12,7 +12,7 @@ export default CountryStyle = StyleSheet.create({
     alignItems: 'center',
   },
   scroll: {
-    height: 120,
+    height: 145,
     marginHorizontal: 15,
   },
   ViewCountry: {
@@ -78,7 +78,7 @@ export default CountryStyle = StyleSheet.create({
   countryText: {
     fontSize: 14,
     paddingVertical: 10,
-    paddingHorizontal: 10,
+    paddingHorizontal: 15,
     color: 'gray',
   },
 

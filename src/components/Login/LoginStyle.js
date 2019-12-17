@@ -17,6 +17,13 @@ export default LoginStyle = StyleSheet.create({
   },
   Icon: {
     fontSize: 24,
+    color:"#07adb9" ,
+    
+  },
+  Iconview: {
+    backgroundColor:"#07adb9",
+    padding:1
+    
   },
   end: {
     color:"#07adb9" ,

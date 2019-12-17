@@ -41,7 +41,7 @@ export default class ShareLocation extends Component {
     // const { navigate } = this.props.navigation;
 
     return (
-      <ScrollView>
+      <ScrollView style={{flex:1}}>
         <ImageBackground
           style={ShareStyle.bg}
           resizeMode="stretch"
@@ -70,7 +70,8 @@ export default class ShareLocation extends Component {
               price too)
             </Text>
           </View>
-
+        </View>
+          <View style={ShareStyle.viewBoxB}>
           <TouchableOpacity
             style={ShareStyle.ButtonStyle}
             onPress={() => {
@@ -78,7 +79,6 @@ export default class ShareLocation extends Component {
             }}>
             <Text style={ShareStyle.Txt}>Share location</Text>
           </TouchableOpacity>
-          <View style={ShareStyle.borderlow}></View>
         </View>
       </ScrollView>
     );

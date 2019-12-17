@@ -45,6 +45,10 @@ export default MainStyle = StyleSheet.create({
     resizeMode: 'contain',
   },
   viewBoxTop: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  viewBoxBtm: {
     justifyContent: 'flex-end',
     alignItems: 'center',
   },

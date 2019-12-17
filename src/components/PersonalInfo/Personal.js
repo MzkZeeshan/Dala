@@ -54,7 +54,7 @@ export default class Personal extends Component {
 
 
                   <View style={perStyle.TextInputView}>
-                    <Icon style={perStyle.Icon} name="add-circle" />
+                  <Icon style={perStyle.Icon} name="email-box" type="MaterialCommunityIcons" />
                     <TextInput
                       underlineColorAndroid="transparent"
                       style={perStyle.TextInputStyle}
@@ -65,7 +65,7 @@ export default class Personal extends Component {
                     />
                   </View>
                   <View style={perStyle.TextInputView}>
-                    <Icon style={perStyle.Icon} name="add-circle" />
+                  <Icon style={perStyle.Icon} name="account-box" type="MaterialCommunityIcons" />
                     <TextInput
                       underlineColorAndroid="transparent"
                       style={perStyle.TextInputStyle}
@@ -77,7 +77,7 @@ export default class Personal extends Component {
                   </View>
 
                   <View style={perStyle.TextInputView}>
-                    <Icon style={perStyle.Icon} name="add-circle" />
+                  <Icon style={perStyle.Icon} name="lock" type="MaterialCommunityIcons"  />
                     <TextInput
                       underlineColorAndroid="transparent"
                       style={perStyle.TextInputStyle}
@@ -88,7 +88,8 @@ export default class Personal extends Component {
                       onChangeText={this.onChange.bind(this, 'email')}
                     // value={address}
                     />
-                    <Icon style={perStyle.Icon} name="add-circle" />
+                         {/* <Icon style={perStyle.Icon} name="eye-outline" type="MaterialCommunityIcons" /> */}
+                    <Icon style={perStyle.Icon} name="eye-off-outline" type="MaterialCommunityIcons" />
                   </View>
 
                   </View>

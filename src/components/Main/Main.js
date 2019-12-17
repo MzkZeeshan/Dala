@@ -54,7 +54,7 @@ export default class Main extends Component {
             <Text style={MainStyle.link}>Change Language </Text>
           </TouchableOpacity>
         </View >
-        <View style={MainStyle.viewBoxTop}>
+        <View style={MainStyle.viewBoxBtm}>
           <TouchableOpacity
             style={MainStyle.ButtonStyle}
             onPress={() => {

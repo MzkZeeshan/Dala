@@ -36,7 +36,7 @@ export default class Head extends Component {
   
         }}>
             <View style={{flexDirection:"row",}}>
-            <Icon name='arrow-back' />
+            <Icon name='chevron-left' style={{color:"#ffff"}} type="Entypo" />
                 <Text style={{alignSelf:"center", color:"#fff"}}> Back</Text>
             </View>
             <View >
@@ -45,7 +45,7 @@ export default class Head extends Component {
             <View style={{}}>
            {
                (this.props.setting)?
-            <Icon name='arrow-back' />
+            <Icon name='settings'  style={{color:"#ffff"}} />
                :null
            } 
 

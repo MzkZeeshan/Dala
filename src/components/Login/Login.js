@@ -51,7 +51,7 @@ export default class Login extends Component {
 
 
                   <View style={LoginStyle.TextInputView}>
-                    <Icon style={LoginStyle.Icon} name="add-circle" />
+                    <Icon style={LoginStyle.Icon} name="email-box" type="MaterialCommunityIcons" />
                     <TextInput
                       underlineColorAndroid="transparent"
                       style={LoginStyle.TextInputStyle}
@@ -62,7 +62,10 @@ export default class Login extends Component {
                     />
                   </View>
                   <View style={LoginStyle.TextInputView}>
-                    <Icon style={LoginStyle.Icon} name="add-circle" />
+                  {/* <Icon style={LoginStyle.Icon} name="user-box" type="MaterialCommunityIcons" /> */}
+                  <Icon style={LoginStyle.Icon} name="account-box" type="MaterialCommunityIcons" />
+                  {/* <View style={LoginStyle.Iconview}>
+                  </View> */}
                     <TextInput
                       underlineColorAndroid="transparent"
                       style={LoginStyle.TextInputStyle}
@@ -74,7 +77,8 @@ export default class Login extends Component {
                   </View>
 
                   <View style={LoginStyle.TextInputView}>
-                    <Icon style={LoginStyle.Icon} name="add-circle" />
+                     
+                    <Icon style={LoginStyle.Icon} name="lock" type="MaterialCommunityIcons"  />
                     <TextInput
                       underlineColorAndroid="transparent"
                       style={LoginStyle.TextInputStyle}
@@ -85,24 +89,24 @@ export default class Login extends Component {
                       onChangeText={this.onChange.bind(this, 'email')}
                     // value={address}
                     />
-                    <Icon style={LoginStyle.Icon} name="add-circle" />
+                    {/* <Icon style={LoginStyle.Icon} name="eye-outline" type="MaterialCommunityIcons" /> */}
+                    <Icon style={LoginStyle.Icon} name="eye-off-outline" type="MaterialCommunityIcons" />
                   </View>
 
                   </View>
                   <Text style={LoginStyle.textbottom}>Please enter atleast 8 charactars</Text>
-                  <View style={{ flexDirection: "row" }}>
+                  <View style={{ flexDirection: "row" ,paddingHorizontal:20}}>
 
                     <CheckBox
                       value={this.state.checkml}
                       onValueChange={() => this.setState({ checkml: !this.state.checkml })}
                     />
-                    <View>
-                      <Text style={LoginStyle.textbom}>Send me emails form Dala3 with the </Text>
-                      <Text style={LoginStyle.textbom}> latest offers & beauty news.</Text>
+                    <View >
+                      <Text style={LoginStyle.textbom}>Send me emails form Dala3 with the latest offers & beauty news.</Text>
                     </View>
                   </View>
 
-                  <View style={{ paddingHorizontal: 1 ,paddingVertical:15}}>
+                  <View style={{ paddingHorizontal: 1 }}>
                     <Text style={LoginStyle.subH}>
                       You can change your preferences at any time, find out how in our privacy policy.
             </Text>
@@ -130,7 +134,7 @@ export default class Login extends Component {
                   </TouchableOpacity>
         
                   </View>
-                <View style={{paddingVertical:10,paddingHorizontal:20,alignItems:"center"}}> 
+                <View style={{paddingVertical:10,paddingHorizontal:15,alignSelf:"center", width: '90%',}}> 
                 <Text>By log in you agree to Dala3 Activities Authority
                 <Text  style={LoginStyle.end}>  Condition of</Text> use and <Text  style={LoginStyle.end}>Privacy Policy</Text>
                 </Text> 

@@ -30,6 +30,10 @@ export default LangStyle = StyleSheet.create({
     // width: width,
     // height: height,
   },
+  viewBoxB: {
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+  },
 
   Text: {
     flex: 1,

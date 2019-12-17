@@ -62,34 +62,39 @@ export default class Country extends Component {
         <View style={CountryStyle.View}>
           <Text style={CountryStyle.Text}>Change Country? </Text>
           <ScrollView style={CountryStyle.scroll}>
+           
+            
+<View>
+
             <View style={CountryStyle.countryView}>
               <Text style={CountryStyle.countryText}>Abu Dhabi</Text>
               <Icon
-                style={{fontSize: 18, paddingVertical: 5}}
+               style={{fontSize: 18, alignSelf: 'center', paddingVertical: 10,color:"gray"}}
                 name="add-circle"
               />
             </View>
             <View style={CountryStyle.countryView}>
-              <Text style={CountryStyle.countryText}>Abu Dhabi</Text>
+              <Text style={CountryStyle.countryText}>Dhubi Dhabi  </Text>
               <Icon
-                style={{fontSize: 18, paddingVertical: 5}}
+               style={{fontSize: 18, alignSelf: 'center', paddingVertical: 10,color:"gray"}}
                 name="add-circle"
               />
             </View>
             <View style={CountryStyle.countryView}>
-              <Text style={CountryStyle.countryText}>Abu Dhabi</Text>
+              <Text style={CountryStyle.countryText}>AjmanDhabi</Text>
               <Icon
-                style={{fontSize: 18, paddingVertical: 5}}
+               style={{fontSize: 18, alignSelf: 'center', paddingVertical: 10,color:"gray"}}
                 name="add-circle"
               />
             </View>
             <View style={CountryStyle.countryView}>
-              <Text style={CountryStyle.countryText}>Abu Dhabi</Text>
+              <Text style={CountryStyle.countryText}>Fujairah</Text>
               <Icon
-                style={{fontSize: 18, paddingVertical: 5}}
+               style={{fontSize: 18, alignSelf: 'center', paddingVertical: 10,color:"gray"}}
                 name="add-circle"
               />
             </View>
+</View>
           </ScrollView>
         </View>
 

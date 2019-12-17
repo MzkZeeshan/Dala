@@ -10,11 +10,16 @@ export default ShareStyle = StyleSheet.create({
     // height: '30%',
     justifyContent: 'center',
     alignItems: 'center',
+    flex:1
   },
   ViewCountry: {
     // height: '30%',
     backgroundColor: 'gray',
     justifyContent: 'center',
+    alignItems: 'center',
+  },
+  viewBoxB: {
+    position:"relative",
     alignItems: 'center',
   },
 

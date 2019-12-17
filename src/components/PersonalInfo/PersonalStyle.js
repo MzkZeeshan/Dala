@@ -16,6 +16,7 @@ export default perStyle = StyleSheet.create({
   },
   Icon: {
     fontSize: 24,
+    color:"#07adb9" ,
   },
  
   subH: {
@@ -27,12 +28,13 @@ export default perStyle = StyleSheet.create({
   },
   textbottom: {
     //   textAlign:"center",
-color:'#b2b2b2',
+    color:'#b2b2b2',
 alignSelf:"flex-start",
 paddingHorizontal:15
-  },
-  textbom: {
-color:'#b2b2b2',
+},
+textbom: {
+  color:'#b2b2b2',
+  paddingRight: 5,
 
 // textAlign: 'center',
   },

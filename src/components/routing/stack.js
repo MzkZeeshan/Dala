@@ -13,6 +13,7 @@ import Rafa from '../Rafawater/Rafa';
 import Login from '../Login/Login';
 import Personal from '../PersonalInfo/Personal';
 import Location from '../Location/Location';
+import MyBooking from '../Mybooking/Mybooking';
 
 // console.disableYellowBox = true;
 
@@ -107,6 +108,12 @@ export const MainStack = StackNavigator(
         header: null,
       },
     },
+    MyBooking: {
+      screen: MyBooking,
+      navigationOptions: {
+        header: null,
+      },
+    },
     SplashScreen: {
       screen: SplashScreen,
       navigationOptions: {
@@ -115,7 +122,7 @@ export const MainStack = StackNavigator(
     },
   },
   {
-    initialRouteName: 'Location',
+    initialRouteName: 'SplashScreen',
     navigationOptions: {
       headerTitle: <View style={styles.headerLogoContainer}></View>,
       headerTintColor: headerTintColor,
