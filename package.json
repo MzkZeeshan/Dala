@@ -10,7 +10,7 @@
     "native-base": "^2.13.8",
     "react": "16.8.3",
     "react-native": "0.59.9",
-    "react-native-maps": "0.26.1",
+    "react-native-maps": "^0.25.0",
     "react-navigation": "1.5.2"
   },
   "devDependencies": {

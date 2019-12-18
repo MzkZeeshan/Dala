@@ -65,7 +65,7 @@ export default class ShareLocation extends Component {
           <TouchableOpacity
             style={Turnstyle.ButtonStyle}
             onPress={() => {
-              this.props.navigation.navigate('ShareLocation');
+              this.props.navigation.navigate('Login');
             }}>
             <Text style={Turnstyle.Txt}>Turn on notifaction</Text>
           </TouchableOpacity>
