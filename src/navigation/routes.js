@@ -14,6 +14,12 @@ import Personal from "../components/PersonalInfo/Personal";
 import Location from "../components/Location/Location";
 import MyBooking from "../components/Mybooking/Mybooking";
 import Homescreen from "../components/Homescreen/Homescreen";
+import Waxbueaty from "../components/Waxbeauty/Waxbeauty"
+import WaxDetail from "../components/WaxDetail/WaxDetail"
+import Favlist from "../components/Favourite/Favourite"
+import Fav from "../components/Favourite/favouriteblank"
+
+
 
 import React, { Component } from "react";
 import Routeskey from "../navigation/routeskey";
@@ -34,6 +40,16 @@ const RouterFlux = props => {
         <Scene key={RoutesKey.CREATE_ACCOUNT} component={CreateAccount} />
         <Scene key={Routeskey.PERSONAL_INFO} component={Personal} />
         <Scene key={Routeskey.HOME_SCREEN} component={Homescreen} />
+        <Scene key={Routeskey.FAVOURITS} component={Fav} />
+        <Scene key={Routeskey.WAX_BUEATY} component={Waxbueaty}/>
+        <Scene key={Routeskey.WAX_DETAIL} component={WaxDetail} />
+        <Scene key={Routeskey.FAVOURITS_LIST} component={Favlist} />
+        <Scene key={Routeskey.FAVOURITS} component={Fav} />
+
+
+      
+
+
       </Stack>
     </Router>
   );

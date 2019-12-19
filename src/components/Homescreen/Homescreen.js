@@ -10,6 +10,9 @@ import {
   Button
 } from "react-native";
 import { Icon } from "native-base";
+import RoutesKey from "../../navigation/routeskey"
+import {Actions} from "react-native-router-flux"
+import Routeskey from "../../navigation/routeskey";
 
 export default class HomeScreen extends Component {
   constructor(props) {
@@ -66,18 +69,13 @@ export default class HomeScreen extends Component {
             />
             <Text>My Loyality Cards</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tabs}>
+          <TouchableOpacity style={styles.tabs} onPress={()=>Actions[Routeskey.FAVOURITS_LIST]()}>
             <Icon name="heart" type="AntDesign" style={{ color: "#fd5280" }} />
             <Text>My Favourites</Text>
           </TouchableOpacity>
         </View>
         <View>
-          <Button
-            title="next"
-            onPress={() => {
-              //   this.props.navigation.navigate("homebackup");
-            }}
-          />
+         
         </View>
       </View>
     );
