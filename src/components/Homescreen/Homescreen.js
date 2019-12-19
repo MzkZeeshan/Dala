@@ -11,7 +11,7 @@ import {
 } from "react-native";
 import { Icon } from "native-base";
 import RoutesKey from "../../navigation/routeskey"
-import {Actions} from "react-native-router-flux"
+import {Actions,ActionConst} from "react-native-router-flux"
 import Routeskey from "../../navigation/routeskey";
 
 export default class HomeScreen extends Component {
@@ -25,7 +25,11 @@ export default class HomeScreen extends Component {
       <View>
         <View style={styles.bg}>
           <View style={styles.top}>
-            <TouchableOpacity style={styles.headerleft}>
+            <TouchableOpacity style={styles.headerleft} onPress={()=>
+              {
+              // console.log("ok")
+              Actions.drawerOpen()
+            }}>
               <Image
                 style={styles.icons}
                 source={require("../../assets/images/bars.png")}

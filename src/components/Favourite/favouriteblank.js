@@ -13,7 +13,7 @@ export default class FavouriteBlank extends Component {
     return (
       <View style={{flex: 1, paddingBottom: 15}}>
         <View style={styles.bg}>
-          <TouchableOpacity style={styles.back} onPress={()=>Actions[Routeskey.WAX_DETAIL]()}>
+          <TouchableOpacity style={styles.back} >
             <Icon
               style={{color: '#ffff'}}
               type="Ionicons"

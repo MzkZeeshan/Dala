@@ -23,6 +23,7 @@ import {
   Form,
   Left
 } from "native-base";
+import { Actions } from "react-native-router-flux";
 
 export default class ChangeLanguage extends Component {
   constructor() {
@@ -110,6 +111,7 @@ export default class ChangeLanguage extends Component {
             style={LangStyle.ButtonStyle}
             onPress={() => {
               // this.props.navigation.navigate('ShareLocation');
+              Actions.drawerOpen()
             }}
           >
             <Text style={LangStyle.Txt}>Continue</Text>
