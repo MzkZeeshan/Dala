@@ -20,12 +20,12 @@ export default class Startexplore extends Component {
   constructor() {
     super();
     this.state = {
-      selected: "key1"
+      selected: 'key1',
     };
   }
   onValueChange = value => {
     this.setState({
-      selected: value
+      selected: value,
     });
   };
 
@@ -37,27 +37,26 @@ export default class Startexplore extends Component {
         <ImageBackground
           style={Startstyle.bg}
           resizeMode="stretch"
-          source={require("../../assets/images/2.png")}
-        >
+          source={require('../../assets/images/2.png')}>
           <View style={Startstyle.viewBoxTop}>
             <Image
               style={Startstyle.Logoimage}
-              source={require("../../assets/images/3.png")}
+              source={require('../../assets/images/3.png')}
             />
           </View>
           <View style={Startstyle.viewBoxTop1}>
             <Image
               style={Startstyle.worldImage}
-              source={require("../../assets/images/11.png")}
+              source={require('../../assets/images/11.png')}
             />
           </View>
         </ImageBackground>
         <View style={Startstyle.View}>
-          <View style={{ paddingHorizontal: "20%" }}>
+          <View style={{paddingHorizontal: '20%'}}>
             <Text style={Startstyle.h1}>Book your next treatement</Text>
           </View>
           <View style={Startstyle.border}></View>
-          <View style={{ paddingHorizontal: 15 }}>
+          <View style={{paddingHorizontal: 15}}>
             <Text style={Startstyle.subH}>
               We use data to show more of what you care and less of what you
               don't.You can
@@ -68,10 +67,8 @@ export default class Startexplore extends Component {
           <TouchableOpacity
             style={Startstyle.ButtonStyle}
             onPress={() => {
-              // this.props.navigation.navigate('ShareLocation');
               Actions[Routeskey.CREATE_ACCOUNT]();
-            }}
-          >
+            }}>
             <Text style={Startstyle.Txt}>Start exploring</Text>
           </TouchableOpacity>
           <View style={Startstyle.borderlow}></View>

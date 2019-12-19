@@ -13,7 +13,8 @@ import {
   FlatList,
   ImageBackground,
 } from 'react-native';
-
+import Routeskey from '../../navigation/routeskey';
+import {Actions} from 'react-native-router-flux';
 export default class ShareLocation extends Component {
   constructor() {
     super();
@@ -67,7 +68,8 @@ export default class ShareLocation extends Component {
           <TouchableOpacity
             style={Turnstyle.ButtonStyle}
             onPress={() => {
-              this.props.navigation.navigate('Login');
+             
+              Actions[Routeskey.START_EXPLORING]()
             }}>
             <Text style={Turnstyle.Txt}>Turn on notifaction</Text>
           </TouchableOpacity>
