@@ -1,25 +1,25 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import {
   Platform,
-  StyleSheet,PermissionsAndroid,
+  StyleSheet,
+  PermissionsAndroid,
   Text,
   View
-} from 'react-native';
+} from "react-native";
 // import SplashScreen from 'react-native-splash-screen';
-import { MainStack } from './src/components/routing/stack'
+import MainRoutes from "./src/navigation/routes";
 
-export default class App extends Component<{}> {
-  constructor(props){
+export default class App extends Component {
+  constructor(props) {
     super(props);
-  
   }
 
   render() {
     return (
-        <View style={styles.container}>
-          <MainStack />      
-    
-        </View>
+      <View style={styles.container}>
+        <MainRoutes />
+        {/* <Text>oksss</Text> */}
+      </View>
     );
   }
 }
@@ -27,16 +27,16 @@ export default class App extends Component<{}> {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff"
   },
   welcome: {
     fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+    textAlign: "center",
+    margin: 10
   },
   instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+    textAlign: "center",
+    color: "#333333",
+    marginBottom: 5
+  }
 });

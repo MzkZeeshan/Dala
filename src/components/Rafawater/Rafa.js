@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import Rafastyle from './Rafastyle';
+import React, { Component } from "react";
+import Rafastyle from "./Rafastyle";
 import {
   Text,
   View,
@@ -10,8 +10,8 @@ import {
   TouchableOpacity,
   Button,
   CheckBox,
-  ImageBackground,
-} from 'react-native';
+  ImageBackground
+} from "react-native";
 
 export default class Rafa extends Component {
   constructor() {
@@ -23,42 +23,45 @@ export default class Rafa extends Component {
     // const { navigate } = this.props.navigation;
 
     return (
-      <View style={{flex: 1}}>
+      <View style={{ flex: 1 }}>
         <ScrollView>
           <View style={Rafastyle.Main}>
             <View
               style={{
-                flexDirection: 'row',
-                justifyContent: 'space-between',
+                flexDirection: "row",
+                justifyContent: "space-between",
                 paddingHorizontal: 12,
-                paddingVertical: 5,
-              }}>
-              <Text style={{color: '#07adb9'}}>One Time Order</Text>
-              <Text style={{color: '#07adb9'}}>Order : 12345</Text>
+                paddingVertical: 5
+              }}
+            >
+              <Text style={{ color: "#07adb9" }}>One Time Order</Text>
+              <Text style={{ color: "#07adb9" }}>Order : 12345</Text>
             </View>
 
             <View
               style={{
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                paddingHorizontal: 12,
-              }}>
+                flexDirection: "row",
+                justifyContent: "space-between",
+                paddingHorizontal: 12
+              }}
+            >
               <Image
                 style={{
                   height: 60,
-                  width: 70,
+                  width: 70
                 }}
-                source={require('../../assets/images/5.png')}
+                source={require("../../assets/images/5.png")}
               />
               <View
                 style={{
                   borderLeftWidth: 1,
                   paddingLeft: 6,
-                  borderLeftColor: 'gray',
-                }}>
+                  borderLeftColor: "gray"
+                }}
+              >
                 <Text>200ml</Text>
-                <Text style={{color: 'blue'}}>Sr.00.00</Text>
-                <Text style={{color: 'gray'}}>00 bollte x 00 cartons</Text>
+                <Text style={{ color: "blue" }}>Sr.00.00</Text>
+                <Text style={{ color: "gray" }}>00 bollte x 00 cartons</Text>
               </View>
               <View>
                 <Text>Sr.00.00</Text>
@@ -68,37 +71,40 @@ export default class Rafa extends Component {
           <View style={Rafastyle.Main}>
             <View
               style={{
-                flexDirection: 'row',
-                justifyContent: 'space-between',
+                flexDirection: "row",
+                justifyContent: "space-between",
                 paddingHorizontal: 12,
-                paddingVertical: 5,
-              }}>
-              <Text style={{color: '#07adb9'}}>One Time Order</Text>
-              <Text style={{color: '#07adb9'}}>Order : 12345</Text>
+                paddingVertical: 5
+              }}
+            >
+              <Text style={{ color: "#07adb9" }}>One Time Order</Text>
+              <Text style={{ color: "#07adb9" }}>Order : 12345</Text>
             </View>
 
             <View
               style={{
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                paddingHorizontal: 12,
-              }}>
+                flexDirection: "row",
+                justifyContent: "space-between",
+                paddingHorizontal: 12
+              }}
+            >
               <Image
                 style={{
                   height: 60,
-                  width: 70,
+                  width: 70
                 }}
-                source={require('../../assets/images/5.png')}
+                source={require("../../assets/images/5.png")}
               />
               <View
                 style={{
                   borderLeftWidth: 1,
                   paddingLeft: 6,
-                  borderLeftColor: 'gray',
-                }}>
+                  borderLeftColor: "gray"
+                }}
+              >
                 <Text>200ml</Text>
-                <Text style={{color: 'blue'}}>Sr.00.00</Text>
-                <Text style={{color: 'gray'}}>00 bollte x 00 cartons</Text>
+                <Text style={{ color: "blue" }}>Sr.00.00</Text>
+                <Text style={{ color: "gray" }}>00 bollte x 00 cartons</Text>
               </View>
               <View>
                 <Text>Sr.00.00</Text>
@@ -108,37 +114,40 @@ export default class Rafa extends Component {
           <View style={Rafastyle.Main}>
             <View
               style={{
-                flexDirection: 'row',
-                justifyContent: 'space-between',
+                flexDirection: "row",
+                justifyContent: "space-between",
                 paddingHorizontal: 12,
-                paddingVertical: 5,
-              }}>
-              <Text style={{color: '#07adb9'}}>One Time Order</Text>
-              <Text style={{color: '#07adb9'}}>Order : 12345</Text>
+                paddingVertical: 5
+              }}
+            >
+              <Text style={{ color: "#07adb9" }}>One Time Order</Text>
+              <Text style={{ color: "#07adb9" }}>Order : 12345</Text>
             </View>
 
             <View
               style={{
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                paddingHorizontal: 12,
-              }}>
+                flexDirection: "row",
+                justifyContent: "space-between",
+                paddingHorizontal: 12
+              }}
+            >
               <Image
                 style={{
                   height: 60,
-                  width: 70,
+                  width: 70
                 }}
-                source={require('../../assets/images/5.png')}
+                source={require("../../assets/images/5.png")}
               />
               <View
                 style={{
                   borderLeftWidth: 1,
                   paddingLeft: 6,
-                  borderLeftColor: 'gray',
-                }}>
+                  borderLeftColor: "gray"
+                }}
+              >
                 <Text>200ml</Text>
-                <Text style={{color: 'blue'}}>Sr.00.00</Text>
-                <Text style={{color: 'gray'}}>00 bollte x 00 cartons</Text>
+                <Text style={{ color: "blue" }}>Sr.00.00</Text>
+                <Text style={{ color: "gray" }}>00 bollte x 00 cartons</Text>
               </View>
               <View>
                 <Text>Sr.00.00</Text>
@@ -148,37 +157,40 @@ export default class Rafa extends Component {
           <View style={Rafastyle.Main}>
             <View
               style={{
-                flexDirection: 'row',
-                justifyContent: 'space-between',
+                flexDirection: "row",
+                justifyContent: "space-between",
                 paddingHorizontal: 12,
-                paddingVertical: 5,
-              }}>
-              <Text style={{color: '#07adb9'}}>One Time Order</Text>
-              <Text style={{color: '#07adb9'}}>Order : 12345</Text>
+                paddingVertical: 5
+              }}
+            >
+              <Text style={{ color: "#07adb9" }}>One Time Order</Text>
+              <Text style={{ color: "#07adb9" }}>Order : 12345</Text>
             </View>
 
             <View
               style={{
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                paddingHorizontal: 12,
-              }}>
+                flexDirection: "row",
+                justifyContent: "space-between",
+                paddingHorizontal: 12
+              }}
+            >
               <Image
                 style={{
                   height: 60,
-                  width: 70,
+                  width: 70
                 }}
-                source={require('../../assets/images/5.png')}
+                source={require("../../assets/images/5.png")}
               />
               <View
                 style={{
                   borderLeftWidth: 1,
                   paddingLeft: 6,
-                  borderLeftColor: 'gray',
-                }}>
+                  borderLeftColor: "gray"
+                }}
+              >
                 <Text>200ml</Text>
-                <Text style={{color: 'blue'}}>Sr.00.00</Text>
-                <Text style={{color: 'gray'}}>00 bollte x 00 cartons</Text>
+                <Text style={{ color: "blue" }}>Sr.00.00</Text>
+                <Text style={{ color: "gray" }}>00 bollte x 00 cartons</Text>
               </View>
               <View>
                 <Text>Sr.00.00</Text>
@@ -188,37 +200,40 @@ export default class Rafa extends Component {
           <View style={Rafastyle.Main}>
             <View
               style={{
-                flexDirection: 'row',
-                justifyContent: 'space-between',
+                flexDirection: "row",
+                justifyContent: "space-between",
                 paddingHorizontal: 12,
-                paddingVertical: 5,
-              }}>
-              <Text style={{color: '#07adb9'}}>One Time Order</Text>
-              <Text style={{color: '#07adb9'}}>Order : 12345</Text>
+                paddingVertical: 5
+              }}
+            >
+              <Text style={{ color: "#07adb9" }}>One Time Order</Text>
+              <Text style={{ color: "#07adb9" }}>Order : 12345</Text>
             </View>
 
             <View
               style={{
-                flexDirection: 'row',
-                justifyContent: 'space-between',
-                paddingHorizontal: 12,
-              }}>
+                flexDirection: "row",
+                justifyContent: "space-between",
+                paddingHorizontal: 12
+              }}
+            >
               <Image
                 style={{
                   height: 60,
-                  width: 70,
+                  width: 70
                 }}
-                source={require('../../assets/images/5.png')}
+                source={require("../../assets/images/5.png")}
               />
               <View
                 style={{
                   borderLeftWidth: 1,
                   paddingLeft: 6,
-                  borderLeftColor: 'gray',
-                }}>
+                  borderLeftColor: "gray"
+                }}
+              >
                 <Text>200ml</Text>
-                <Text style={{color: 'blue'}}>Sr.00.00</Text>
-                <Text style={{color: 'gray'}}>00 bollte x 00 cartons</Text>
+                <Text style={{ color: "blue" }}>Sr.00.00</Text>
+                <Text style={{ color: "gray" }}>00 bollte x 00 cartons</Text>
               </View>
               <View>
                 <Text>Sr.00.00</Text>
@@ -230,8 +245,9 @@ export default class Rafa extends Component {
           <TouchableOpacity
             style={Rafastyle.ButtonStyle}
             onPress={() => {
-              this.props.navigation.navigate('ChangeLanguage');
-            }}>
+              // this.props.navigation.navigate('ChangeLanguage');
+            }}
+          >
             <Text style={Rafastyle.Txt}>Pay Now</Text>
           </TouchableOpacity>
         </View>

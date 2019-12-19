@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import MainStyle from './MainStyle';
+import React, { Component } from "react";
+import MainStyle from "./MainStyle";
 import {
   Text,
   View,
@@ -10,8 +10,10 @@ import {
   TouchableOpacity,
   Button,
   CheckBox,
-  ImageBackground,
-} from 'react-native';
+  ImageBackground
+} from "react-native";
+import { Actions } from "react-native-router-flux";
+import routesKey from "../../navigation/routeskey";
 
 export default class Main extends Component {
   constructor() {
@@ -23,15 +25,16 @@ export default class Main extends Component {
     // const { navigate } = this.props.navigation;
 
     return (
-      <ScrollView style={{flex: 1}}>
+      <ScrollView style={{ flex: 1 }}>
         <ImageBackground
           style={MainStyle.bg}
           resizeMode="stretch"
-          source={require('../../assets/images/1.png')}>
+          source={require("../../assets/images/1.png")}
+        >
           <View style={MainStyle.viewBoxTop}>
             <Image
               style={MainStyle.Logoimage}
-              source={require('../../assets/images/3.png')}
+              source={require("../../assets/images/3.png")}
             />
           </View>
         </ImageBackground>
@@ -43,26 +46,32 @@ export default class Main extends Component {
 
           <TouchableOpacity
             onPress={() => {
-              this.props.navigation.navigate('Country');
-            }}>
+              Actions[routesKey.LANGUAGE]();
+              // this.props.navigation.navigate('Country');
+            }}
+          >
             <Text style={MainStyle.link}>Change Country ? </Text>
           </TouchableOpacity>
           <TouchableOpacity
             onPress={() => {
-              this.props.navigation.navigate('ChangeLanguage');
-            }}>
+              Actions[routesKey.COUNTRY]();
+              // this.props.navigation.navigate('ChangeLanguage');
+            }}
+          >
             <Text style={MainStyle.link}>Change Language </Text>
           </TouchableOpacity>
-        </View >
+        </View>
         <View style={MainStyle.viewBoxBtm}>
           <TouchableOpacity
             style={MainStyle.ButtonStyle}
             onPress={() => {
-              this.props.navigation.navigate('Country');
-            }}>
+              Actions[routesKey.SHARE_LOCATION]();
+              // this.props.navigation.navigate("Country");
+            }}
+          >
             <Text style={MainStyle.Txt}>Continue</Text>
           </TouchableOpacity>
-            </View>
+        </View>
       </ScrollView>
     );
   }
