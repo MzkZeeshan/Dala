@@ -1,30 +1,29 @@
-import React, { Component } from "react";
-import Turnstyle from "./TrunStyle";
+import React, {Component} from 'react';
+import Turnstyle from './TrunStyle';
 import {
   Text,
   View,
   Image,
+  TextInput,
   ScrollView,
   StyleSheet,
   TouchableOpacity,
   Button,
   CheckBox,
   FlatList,
-  ImageBackground
-} from "react-native";
-import routeskey from "../../navigation/routeskey";
-import { Actions } from "react-native-router-flux";
+  ImageBackground,
+} from 'react-native';
 
-export default class TurnOnNotification extends Component {
+export default class ShareLocation extends Component {
   constructor() {
     super();
     this.state = {
-      selected: "key1"
+      selected: 'key1',
     };
   }
   onValueChange = value => {
     this.setState({
-      selected: value
+      selected: value,
     });
   };
 
@@ -32,31 +31,30 @@ export default class TurnOnNotification extends Component {
     // const { navigate } = this.props.navigation;
 
     return (
-      <ScrollView>
+      <View style={{flex:1}}>
         <ImageBackground
           style={Turnstyle.bg}
           resizeMode="stretch"
-          source={require("../../assets/images/10.png")}
-        >
+          source={require('../../assets/images/10.png')}>
           <View style={Turnstyle.viewBoxTop}>
             <Image
               style={Turnstyle.Logoimage}
-              source={require("../../assets/images/3.png")}
+              source={require('../../assets/images/3.png')}
             />
           </View>
           <View style={Turnstyle.viewBoxTop1}>
             <Image
               style={Turnstyle.worldImage}
-              source={require("../../assets/images/9.png")}
+              source={require('../../assets/images/9.png')}
             />
           </View>
         </ImageBackground>
         <View style={Turnstyle.View}>
-          <View style={{ paddingHorizontal: "20%" }}>
+          <View style={{paddingHorizontal: '20%'}}>
             <Text style={Turnstyle.h1}>Manage your Bookings easily </Text>
           </View>
           <View style={Turnstyle.border}></View>
-          <View style={{ paddingHorizontal: 15 }}>
+          <View style={{paddingHorizontal: 15}}>
             <Text style={Turnstyle.subH}>
               Turn on notification and we'll help you manage your appointments
               with booking reminders, salons dictection and esay reschuduling if
@@ -64,18 +62,17 @@ export default class TurnOnNotification extends Component {
             </Text>
           </View>
 
+        </View>
+        <View style={Turnstyle.viewBoxB}>
           <TouchableOpacity
             style={Turnstyle.ButtonStyle}
             onPress={() => {
-              Actions[routeskey.START_EXPLORING]();
-              // this.props.navigation.navigate('Login');
-            }}
-          >
+              this.props.navigation.navigate('Login');
+            }}>
             <Text style={Turnstyle.Txt}>Turn on notifaction</Text>
           </TouchableOpacity>
-          <View style={Turnstyle.borderlow}></View>
-        </View>
-      </ScrollView>
+      </View>
+      </View>
     );
   }
 }

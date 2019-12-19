@@ -8,7 +8,6 @@ import ChangeLanguage from "../components/Language/Language";
 import ShareLocation from "../components/ShareLocation/Sharelocation";
 import TurnOnNoti from "../components/TurnOnNoti/Turnonnoti";
 import Startexplore from "../components/StartExplore/Startexplore";
-import Rafa from "../components//Rafawater/Rafa";
 import CreateAccount from "../components/Login/CreateAccount";
 import Personal from "../components/PersonalInfo/Personal";
 import Location from "../components/Location/Location";
