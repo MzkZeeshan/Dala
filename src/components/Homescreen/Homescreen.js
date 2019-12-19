@@ -10,6 +10,9 @@ import {
   Button
 } from "react-native";
 import { Icon } from "native-base";
+import RoutesKey from "../../navigation/routeskey"
+import {Actions} from "react-native-router-flux"
+import Routeskey from "../../navigation/routeskey";
 
 import Accordian from "../accordians/accordian"
 import Recommend from "../recommendDala/recommend"
