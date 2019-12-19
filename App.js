@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import {
   Platform,
   StyleSheet,
-  PermissionsAndroid,
+  StatusBar,
   Text,
   View
 } from "react-native";
@@ -17,6 +17,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
+        <StatusBar backgroundColor="#07aeb8" barStyle="light-content" />
         <MainRoutes />
         {/* <Text>oksss</Text> */}
       </View>

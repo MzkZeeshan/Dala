@@ -24,7 +24,7 @@ const RouterFlux = props => {
   return (
     <Router>
       <Stack key="root" hideNavBar>
-        <Scene key={RoutesKey.SPLASH} component={SplashScreen} initial={true} />
+        <Scene key={RoutesKey.SPLASH} component={SplashScreen}  />
         <Scene key={RoutesKey.MAIN} component={Main} />
         <Scene key={RoutesKey.COUNTRY} component={Country} />
         <Scene key={RoutesKey.SHARE_LOCATION} component={ShareLocation} />
@@ -33,7 +33,7 @@ const RouterFlux = props => {
         <Scene key={RoutesKey.START_EXPLORING} component={Startexplore} />
         <Scene key={RoutesKey.CREATE_ACCOUNT} component={CreateAccount} />
         <Scene key={Routeskey.PERSONAL_INFO} component={Personal} />
-        <Scene key={Routeskey.HOME_SCREEN} component={Homescreen} />
+        <Scene key={Routeskey.HOME_SCREEN} component={Homescreen} initial={true}/>
       </Stack>
     </Router>
   );
