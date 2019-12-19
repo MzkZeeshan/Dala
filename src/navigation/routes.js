@@ -17,6 +17,8 @@ import Waxbueaty from "../components/Waxbeauty/Waxbeauty"
 import WaxDetail from "../components/WaxDetail/WaxDetail"
 import Favlist from "../components/Favourite/Favourite"
 import Fav from "../components/Favourite/favouriteblank"
+import Feedback from "../components/Feedback/Feedback"
+import Setting from "../components/Setting/Setting"
 
 
 
@@ -43,6 +45,8 @@ const RouterFlux = props => {
         <Scene key={Routeskey.WAX_BUEATY} component={Waxbueaty}/>
         <Scene key={Routeskey.WAX_DETAIL} component={WaxDetail} />
         <Scene key={Routeskey.FAVOURITS_LIST} component={Favlist} />
+        <Scene key={Routeskey.FEEDBACK} component={Feedback} />
+        <Scene key={Routeskey.SETTING} component={Setting} />
         <Scene key={Routeskey.FAVOURITS} component={Fav} />
 
 

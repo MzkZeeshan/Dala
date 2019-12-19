@@ -10,6 +10,8 @@ class Routeskey {
   static PERSONAL_INFO = "personal_info";
   static HOME_SCREEN = "home_screen";
   static FAVOURITS_LIST="favourits_list"
+  static FEEDBACK="feedback"
+  static SETTING="setting"
   static FAVOURITS="favourits"
   static WAX_BUEATY="wax_bueaty"
   static WAX_DETAIL="wax_detail"
