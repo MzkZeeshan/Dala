@@ -23,6 +23,7 @@ import {
   Form,
   Left
 } from "native-base";
+import {Back} from "../Header/Header";
 
 export default class Country extends Component {
   constructor() {
@@ -47,6 +48,9 @@ export default class Country extends Component {
           resizeMode="stretch"
           source={require("../../assets/images/2.png")}
         >
+             {/* back button */}
+             <Back/>
+              {/* back button */}
           <View style={CountryStyle.viewBoxTop}>
             <Image
               style={CountryStyle.Logoimage}
@@ -56,12 +60,12 @@ export default class Country extends Component {
           <View style={CountryStyle.viewBoxTop1}>
             <Image
               style={CountryStyle.worldImage}
-              source={require("../../assets/images/4.png")}
+              source={require("../../assets/images/country.png")}
             />
           </View>
         </ImageBackground>
-        <View style={CountryStyle.View}>
           <Text style={CountryStyle.Text}>Change Country? </Text>
+        <View style={CountryStyle.View}>
 
           {/* <View style={CountryStyle.scroll}> */}
           <ScrollView style={CountryStyle.scroll}>

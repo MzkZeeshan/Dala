@@ -15,7 +15,7 @@ export default CheckStyle = StyleSheet.create({
   },
   Logoimage: {
     width: imageWidth,
-    // height: 100,
+    height: height,
     resizeMode: 'contain',
   },
   ButtonStyle: {

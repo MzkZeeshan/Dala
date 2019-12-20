@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import HeadStyle from './HeadStyle';
 import {
   View,
   Image,
@@ -21,7 +20,9 @@ export default class Search extends Component {
     };
   }
 
-
+  onChange(name, val) {
+    this.setState({ [name]: val });
+  }
   render() {
 
     return (
@@ -40,22 +41,43 @@ export default class Search extends Component {
             <Icon name='chevron-left' style={{color:"#ffff"}} type="Entypo" />
             
             </View>
-            <View style={{alignSelf:"center",marginLeft:-20}}>
-                <Text style={{alignSelf:"center", color:"#fff" }}>{this.props.title}</Text>
-                {
-               (this.props.sub)?
-           
-               <Text style={{alignSelf:"center", color:"#fff",fontSize:12 }}>{this.props.sub}</Text>
-               :null
-           } 
-            </View>
             <View style={{}}>
-           {
-               (this.props.setting)?
-            <Icon name='settings'  style={{color:"#ffff"}} />
-               :null
-           } 
+            <View style={{
+                marginVertical: 5,
+                flexDirection: 'row',
+                backgroundColor: 'white',
+                borderRadius: 5,
+                paddingHorizontal: 10,
+                alignItems: 'center',
+                elevation: 1,
+                width: '90%',
+                shadowColor: "#000",
+            elevation: 3,
+            }}>
+                  <Icon
+                    style={{
+                      fontSize: 24,
+                      color:"#07adb9" ,
 
+                    }}
+                    name="lock"
+                    type="MaterialCommunityIcons"
+                  />
+                  <TextInput
+                    underlineColorAndroid="transparent"
+                    style={{
+                      flex: 1,
+                      color: 'grey',
+                      marginRight: 10,
+                    }}
+                    maxLength={30}
+                    placeholder="Password"
+                    secureTextEntry={true}
+                    placeholderTextColor="#b2b2b2"
+                    onChangeText={this.onChange.bind(this, "search")}
+                    // value={address}
+                  />
+             
             </View>
         </View>
     );

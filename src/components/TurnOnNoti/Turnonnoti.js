@@ -15,6 +15,8 @@ import {
 } from 'react-native';
 import Routeskey from '../../navigation/routeskey';
 import {Actions} from 'react-native-router-flux';
+import {Back} from "../Header/Header";
+
 export default class ShareLocation extends Component {
   constructor() {
     super();
@@ -37,6 +39,10 @@ export default class ShareLocation extends Component {
           style={Turnstyle.bg}
           resizeMode="stretch"
           source={require('../../assets/images/10.png')}>
+           
+               {/* back button */}
+               <Back/>
+              {/* back button */}
           <View style={Turnstyle.viewBoxTop}>
             <Image
               style={Turnstyle.Logoimage}

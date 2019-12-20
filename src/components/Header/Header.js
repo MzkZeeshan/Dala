@@ -72,3 +72,24 @@ export default class Head extends Component {
     );
   }
 }
+export class Back extends Component {
+  constructor() {
+    super();
+
+  }
+
+  render() {
+    return (
+   
+         <View style={{position:"absolute", top:10, left:5}}>
+         <TouchableOpacity>
+           <View style={{ flexDirection: "row", alignSelf: "center" }}>
+         <Icon name="chevron-left" style={{ color: "#ffff" }} type="Entypo" />
+         <Text style={{ alignSelf: "center", color: "#fff",fontWeight:"bold" }}> Back</Text>
+         </View>
+         </TouchableOpacity>
+   </View>
+
+    );
+  }
+}

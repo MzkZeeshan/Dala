@@ -15,6 +15,8 @@ import {
 } from "react-native";
 import { Actions } from "react-native-router-flux";
 import Routeskey from "../../navigation/routeskey";
+import {Icon} from "native-base";
+import {Back} from "../Header/Header";
 
 export default class Startexplore extends Component {
   constructor() {
@@ -33,12 +35,16 @@ export default class Startexplore extends Component {
     // const { navigate } = this.props.navigation;
 
     return (
-      <ScrollView>
+      <View style={{flex:1}}>
         <ImageBackground
           style={Startstyle.bg}
           resizeMode="stretch"
           source={require('../../assets/images/2.png')}>
+              {/* back button */}
+              <Back/>
+              {/* back button */}
           <View style={Startstyle.viewBoxTop}>
+         
             <Image
               style={Startstyle.Logoimage}
               source={require('../../assets/images/3.png')}
@@ -63,7 +69,8 @@ export default class Startexplore extends Component {
             </Text>
             <Text style={Startstyle.read}>read more here.</Text>
           </View>
-
+        </View>
+          <View style={Startstyle.viewBoxB}>
           <TouchableOpacity
             style={Startstyle.ButtonStyle}
             onPress={() => {
@@ -71,9 +78,8 @@ export default class Startexplore extends Component {
             }}>
             <Text style={Startstyle.Txt}>Start exploring</Text>
           </TouchableOpacity>
-          <View style={Startstyle.borderlow}></View>
         </View>
-      </ScrollView>
+        </View>
     );
   }
 }
