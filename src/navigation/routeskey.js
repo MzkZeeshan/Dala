@@ -18,5 +18,8 @@ class Routeskey {
   static DRAWER="drawer";
   static SETTING="setting"
   static MY_BOOKING="my_booking"
+  static LEGAL="legal"
+  static CHECKBOOKING="checkbooking"
+  static CHECKEMAIL="checkemail"
 }
 export default Routeskey;
