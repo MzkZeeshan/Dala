@@ -15,6 +15,8 @@ import {
 } from "react-native";
 import { Actions } from "react-native-router-flux";
 import Routeskey from "../../navigation/routeskey";
+import {Icon} from "native-base";
+import {Back} from "../Header/Header";
 
 export default class Startexplore extends Component {
   constructor() {
@@ -38,7 +40,11 @@ export default class Startexplore extends Component {
           style={Startstyle.bg}
           resizeMode="stretch"
           source={require('../../assets/images/2.png')}>
+              {/* back button */}
+              <Back/>
+              {/* back button */}
           <View style={Startstyle.viewBoxTop}>
+         
             <Image
               style={Startstyle.Logoimage}
               source={require('../../assets/images/3.png')}

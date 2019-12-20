@@ -36,7 +36,7 @@ export default CountryStyle = StyleSheet.create({
   },
 
   Text: {
-    flex: 1,
+    // flex: 1,
     alignSelf: 'center',
     color: 'gray',
     paddingVertical: 5,

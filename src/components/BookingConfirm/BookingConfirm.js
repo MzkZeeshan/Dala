@@ -13,10 +13,7 @@ import {
   FlatList,
   ImageBackground
 } from "react-native";
-import {
-  Icon,
-
-} from "native-base";
+import {Icon} from "native-base";
 import { Actions } from "react-native-router-flux";
 import MapView from 'react-native-maps';
 
@@ -47,9 +44,7 @@ export default class BookingConfirm extends Component {
             <View style={{
               position:"absolute",
               top:30,
-              // paddingHorizontal:10,
               left:5
-
             }}>
               <TouchableOpacity>
 

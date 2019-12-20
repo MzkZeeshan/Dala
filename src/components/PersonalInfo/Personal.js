@@ -13,6 +13,8 @@ import {
 } from "react-native";
 import { Icon, Content } from "native-base";
 import Routeskey from "../../navigation/routeskey";
+import {Back} from "../Header/Header";
+
 import { Actions } from "react-native-router-flux";
 export default class Personal extends Component {
   constructor() {
@@ -43,7 +45,9 @@ export default class Personal extends Component {
               // this.props.navigation.navigate('Turnonnoti');
             }}
           >
-            <Text> </Text>
+            {/* back button */}
+            <Back/>
+              {/* back button */}
           </TouchableOpacity>
           <View style={perStyle.viewBoxTop}>
             <Image
@@ -178,6 +182,7 @@ export default class Personal extends Component {
                 // this.props.navigation.navigate('Turnonnoti');
               }}
             >
+              <Icon name="facebook-square" style={{ color: "#ffff" ,paddingHorizontal:20}} type="AntDesign" />
               <Text style={perStyle.Txt}>Continue With Facebook</Text>
             </TouchableOpacity>
             <TouchableOpacity
@@ -186,6 +191,7 @@ export default class Personal extends Component {
                 // this.props.navigation.navigate('Turnonnoti');
               }}
             >
+                 <Icon name="email" style={{ color: "#ffff" ,paddingHorizontal:20}} type="MaterialCommunityIcons" />
               <Text style={perStyle.Txt}>Continue With Email</Text>
             </TouchableOpacity>
           </View>

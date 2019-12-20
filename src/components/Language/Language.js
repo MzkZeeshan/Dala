@@ -14,15 +14,10 @@ import {
   ImageBackground
 } from "react-native";
 import {
-  Container,
-  CardItem,
-  Header,
-  Content,
   Icon,
-  Picker,
-  Form,
-  Left
 } from "native-base";
+import {Back} from "../Header/Header";
+
 import { Actions } from "react-native-router-flux";
 
 export default class ChangeLanguage extends Component {
@@ -48,6 +43,10 @@ export default class ChangeLanguage extends Component {
           resizeMode="stretch"
           source={require("../../assets/images/2.png")}
         >
+          
+               {/* back button */}
+               <Back/>
+              {/* back button */}
           <View style={LangStyle.viewBoxTop}>
             <Image
               style={LangStyle.Logoimage}
@@ -61,8 +60,8 @@ export default class ChangeLanguage extends Component {
             />
           </View>
         </ImageBackground>
-        <View style={LangStyle.View}>
           <Text style={LangStyle.Text}>Change Labnguage? </Text>
+        <View style={LangStyle.View}>
           <View style={LangStyle.countryView}>
             <View style={{ flexDirection: "row" }}>
               <Image

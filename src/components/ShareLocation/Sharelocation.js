@@ -13,18 +13,15 @@ import {
   FlatList,
   ImageBackground
 } from "react-native";
+
 import {
-  Container,
-  CardItem,
-  Header,
-  Content,
+  
   Icon,
-  Picker,
-  Form,
-  Left
+  
 } from "native-base";
 import routeskey from "../../navigation/routeskey";
 import { Actions } from "react-native-router-flux";
+import {Back} from "../Header/Header";
 
 export default class ShareLocation extends Component {
   constructor() {
@@ -49,6 +46,10 @@ export default class ShareLocation extends Component {
           resizeMode="stretch"
           source={require("../../assets/images/2.png")}
         >
+          
+               {/* back button */}
+               <Back/>
+              {/* back button */}
           <View style={ShareStyle.viewBoxTop}>
             <Image
               style={ShareStyle.Logoimage}

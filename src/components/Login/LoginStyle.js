@@ -14,6 +14,7 @@ export default LoginStyle = StyleSheet.create({
 
   Txt: {
     color: '#fff',
+    flex:1
   },
   Icon: {
     fontSize: 24,
@@ -120,6 +121,7 @@ elevation: 3,
 },
 ButtonStylefb: {
   marginTop:30,
+  flex:1,
     backgroundColor: '#2E87BF',
     width: '80%',
     alignItems: 'center',
@@ -129,6 +131,7 @@ ButtonStylefb: {
     marginVertical: 10,
     justifyContent: 'center',
     paddingVertical: 15,
+    flexDirection:"row"
 
   },
 });

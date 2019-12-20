@@ -79,7 +79,7 @@ const RouterFlux = props => {
          
 
 
-          <Scene key={RoutesKey.SPLASH} component={SplashScreen}  />
+          <Scene key={RoutesKey.SPLASH} component={SplashScreen} initial={true} />
         <Scene key={RoutesKey.MAIN} component={Main} />
         <Scene key={RoutesKey.COUNTRY} component={Country} />
         <Scene key={RoutesKey.SHARE_LOCATION} component={ShareLocation} />
@@ -90,7 +90,7 @@ const RouterFlux = props => {
 
         
 
-        <Scene key={RoutesKey.START_EXPLORING} component={Startexplore} initial={true}  />
+        <Scene key={RoutesKey.START_EXPLORING} component={Startexplore}   />
         <Scene key={RoutesKey.CREATE_ACCOUNT} component={CreateAccount} />
         <Scene key={Routeskey.PERSONAL_INFO} component={Personal} />
         <Scene key={Routeskey.HOME_SCREEN} component={Homescreen} />
@@ -103,8 +103,8 @@ const RouterFlux = props => {
         <Scene key={Routeskey.MY_BOOKING} component={Mybooking} /> 
 
         <Scene key={Routeskey.LEGAL} component={Legal} />  
-        <Scene key={Routeskey.CheckBooking} component={CheckBooking} />  
-        <Scene key={Routeskey.CHECKEMAIL} component={CheckEmail} />  
+        <Scene key={Routeskey.CheckBooking} component={CheckBooking}  />  
+        <Scene key={Routeskey.CHECKEMAIL} component={CheckEmail}  />  
         <Scene key={Routeskey.BOOKKING_CONFIRM} component={BookingConfirm} />  
         <Scene key={Routeskey.ADD_CARD} component={Addcard} />  
 

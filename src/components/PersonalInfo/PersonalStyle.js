@@ -10,9 +10,10 @@ export default perStyle = StyleSheet.create({
     alignItems: 'center',
     flex:1
   },
-
+  
   Txt: {
     color: '#fff',
+    flex:1
   },
   Icon: {
     fontSize: 24,
@@ -128,10 +129,11 @@ ButtonStylefb: {
     marginVertical: 10,
     justifyContent: 'center',
     paddingVertical: 15,
+    flexDirection:"row"
 
   },
   ButtonStylegoogle: {
-  
+flexDirection:"row",
     backgroundColor: '#ffc0cb',
     width: '80%',
     alignItems: 'center',

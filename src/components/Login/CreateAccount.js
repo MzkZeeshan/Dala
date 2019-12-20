@@ -13,6 +13,8 @@ import {
 import { Icon, Content } from "native-base";
 import Routeskey from "../../navigation/routeskey";
 import { Actions } from "react-native-router-flux";
+import {Back} from "../Header/Header";
+
 export default class CreateAccount extends Component {
   constructor() {
     super();
@@ -46,7 +48,9 @@ export default class CreateAccount extends Component {
               source={require("../../assets/images/3.png")}
             />
           </View>
-
+              {/* back button */}
+              <Back/>
+              {/* back button */}
           <View style={LoginStyle.View}>
             <View style={LoginStyle.Main}>
               <Text style={LoginStyle.H1}>Create your account</Text>
@@ -141,6 +145,7 @@ export default class CreateAccount extends Component {
                   Actions[Routeskey.PERSONAL_INFO]();
                 }}
               >
+
                 <Text style={LoginStyle.Txt}>Create your Account</Text>
               </TouchableOpacity>
             </View>
@@ -151,6 +156,7 @@ export default class CreateAccount extends Component {
                 // this.props.navigation.navigate('Turnonnoti');
               }}
             >
+                <Icon name="facebook-square" style={{ color: "#ffff" ,paddingHorizontal:20,  alignSelf: 'flex-start',}} type="AntDesign" />
               <Text style={LoginStyle.Txt}>Continue With Facebook</Text>
             </TouchableOpacity>
           </View>

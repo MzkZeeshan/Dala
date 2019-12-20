@@ -39,7 +39,7 @@ export default class CheckEmail extends Component {
 
                 <Image
               style={CheckStyle.Logoimage}
-              source={require('../../assets/images/5.png')}/>
+              source={require('../../assets/images/mail.png')}/>
               
             <Text style={{color:"#000"}}>Check you email!</Text>
                 <View style={{

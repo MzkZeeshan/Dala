@@ -39,7 +39,7 @@ export default class CheckBooking extends Component {
 
                 <Image
               style={CheckStyle.Logoimage}
-              source={require('../../assets/images/5.png')}/>
+              source={require('../../assets/images/mybooking.png')}/>
               
             <Text style={{color:"#000"}}>Your Booing will appear here</Text>
                 <View style={{
