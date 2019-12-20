@@ -21,5 +21,6 @@ class Routeskey {
   static LEGAL="legal"
   static CHECKBOOKING="checkbooking"
   static CHECKEMAIL="checkemail"
+  static BOOKKING_CONFIRM="bookingconfirm"
 }
 export default Routeskey;

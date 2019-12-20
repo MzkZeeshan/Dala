@@ -30,6 +30,7 @@ import Mybooking from "../components/Mybooking/Mybooking"
 import Legal from "../components/Legal/Legal"
 import CheckBooking from "../components/CheckEmailAndBooking/Check"
 import CheckEmail from "../components/CheckEmailAndBooking/CheckEmail"
+import BookingConfirm from "../components/BookingConfirm/BookingConfirm"
 
 
 
@@ -77,7 +78,7 @@ const RouterFlux = props => {
          
 
 
-          <Scene key={RoutesKey.SPLASH} component={SplashScreen} initial={true} />
+          <Scene key={RoutesKey.SPLASH} component={SplashScreen}  />
         <Scene key={RoutesKey.MAIN} component={Main} />
         <Scene key={RoutesKey.COUNTRY} component={Country} />
         <Scene key={RoutesKey.SHARE_LOCATION} component={ShareLocation} />
@@ -103,6 +104,7 @@ const RouterFlux = props => {
         <Scene key={Routeskey.LEGAL} component={Legal} />  
         <Scene key={Routeskey.CheckBooking} component={CheckBooking} />  
         <Scene key={Routeskey.CHECKEMAIL} component={CheckEmail} />  
+        <Scene key={Routeskey.BOOKKING_CONFIRM} component={BookingConfirm} initial={true} />  
 
           </Scene>
         </Drawer>

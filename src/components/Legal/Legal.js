@@ -47,7 +47,7 @@ export default class Legal extends Component {
             </View>
 
             </View>
-       <View style={LegalStyle.head1}>
+              <View style={LegalStyle.head1}>
             <View style={{flexDirection:"row",paddingHorizontal:10}}>
 
             {/* <Icon name='balance-scale'  style={{color:"#07adb9",paddingHorizontal:10}}  type="FontAwesome" /> */}

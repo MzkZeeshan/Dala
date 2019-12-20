@@ -12,6 +12,9 @@ export default BookStyle = StyleSheet.create({
   subtxt: {
     color:"#07adb9",
   },
+  txt:{
+color:"#fff"
+  },
   waxh1: {
     color:"#000",
     textAlign:"center",
