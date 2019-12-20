@@ -19,7 +19,11 @@ export default Startstyle = StyleSheet.create({
   },
 
   bg: {
-    flex: 1,
+    // flex: 1,
+    width:width,
+    height:height
+
+  
   },
   Txt: {
     color: '#fff',
@@ -113,5 +117,12 @@ export default Startstyle = StyleSheet.create({
     borderBottomColor: '#07adb9',
     borderBottomWidth: 5,
     borderRadius: 5,
+  },
+  viewBoxB: {
+    width:"100%",
+    justifyContent: 'flex-end',
+    alignItems: 'center',
+    bottom:0,
+    position:"absolute"
   },
 });

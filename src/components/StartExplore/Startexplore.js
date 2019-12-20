@@ -33,7 +33,7 @@ export default class Startexplore extends Component {
     // const { navigate } = this.props.navigation;
 
     return (
-      <ScrollView>
+      <View style={{flex:1}}>
         <ImageBackground
           style={Startstyle.bg}
           resizeMode="stretch"
@@ -63,7 +63,8 @@ export default class Startexplore extends Component {
             </Text>
             <Text style={Startstyle.read}>read more here.</Text>
           </View>
-
+        </View>
+          <View style={Startstyle.viewBoxB}>
           <TouchableOpacity
             style={Startstyle.ButtonStyle}
             onPress={() => {
@@ -71,9 +72,8 @@ export default class Startexplore extends Component {
             }}>
             <Text style={Startstyle.Txt}>Start exploring</Text>
           </TouchableOpacity>
-          <View style={Startstyle.borderlow}></View>
         </View>
-      </ScrollView>
+        </View>
     );
   }
 }

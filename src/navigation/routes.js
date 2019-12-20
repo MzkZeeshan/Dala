@@ -30,11 +30,8 @@ import Mybooking from "../components/Mybooking/Mybooking"
 import Legal from "../components/Legal/Legal"
 import CheckBooking from "../components/CheckEmailAndBooking/Check"
 import CheckEmail from "../components/CheckEmailAndBooking/CheckEmail"
-<<<<<<< HEAD
 import BookingConfirm from "../components/BookingConfirm/BookingConfirm"
-=======
 import Addcard from "../components/AddCard/Addcard";
->>>>>>> cae1f88af005a9dc24959aae6d9943c7b22039da
 
 
 
@@ -93,7 +90,7 @@ const RouterFlux = props => {
 
         
 
-        <Scene key={RoutesKey.START_EXPLORING} component={Startexplore} />
+        <Scene key={RoutesKey.START_EXPLORING} component={Startexplore} initial={true}  />
         <Scene key={RoutesKey.CREATE_ACCOUNT} component={CreateAccount} />
         <Scene key={Routeskey.PERSONAL_INFO} component={Personal} />
         <Scene key={Routeskey.HOME_SCREEN} component={Homescreen} />
@@ -108,11 +105,8 @@ const RouterFlux = props => {
         <Scene key={Routeskey.LEGAL} component={Legal} />  
         <Scene key={Routeskey.CheckBooking} component={CheckBooking} />  
         <Scene key={Routeskey.CHECKEMAIL} component={CheckEmail} />  
-<<<<<<< HEAD
-        <Scene key={Routeskey.BOOKKING_CONFIRM} component={BookingConfirm} initial={true} />  
-=======
+        <Scene key={Routeskey.BOOKKING_CONFIRM} component={BookingConfirm} />  
         <Scene key={Routeskey.ADD_CARD} component={Addcard} />  
->>>>>>> cae1f88af005a9dc24959aae6d9943c7b22039da
 
           </Scene>
         </Drawer>
