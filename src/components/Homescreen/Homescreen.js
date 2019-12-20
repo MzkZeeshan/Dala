@@ -14,6 +14,8 @@ import RoutesKey from "../../navigation/routeskey"
 import {Actions,ActionConst} from "react-native-router-flux"
 import Routeskey from "../../navigation/routeskey";
 
+import Accordian from "../accordians/accordian"
+import Recommend from "../recommendDala/recommend"
 export default class HomeScreen extends Component {
   constructor(props) {
     super(props);
@@ -39,7 +41,7 @@ export default class HomeScreen extends Component {
               style={styles.logo}
               source={require("../../assets/images/3.png")}
             />
-            <TouchableOpacity style={styles.headerRight}>
+            <TouchableOpacity onPress={()=>Actions[Routeskey.SETTING]()} style={styles.headerRight}>
               <Image
                 style={styles.icons}
                 source={require("../../assets/images/set.png")}
@@ -57,29 +59,37 @@ export default class HomeScreen extends Component {
         </View>
 
         <View style={styles.tabbox}>
+
           <TouchableOpacity style={styles.tabs}>
             <Icon
               name="calendar"
               type="AntDesign"
               style={{ color: "#ab4fe3" }}
             />
-            <Text>My Bookings</Text>
+          
+            <Text style={styles.textSize}>My Bookings</Text>
           </TouchableOpacity>
+
+          <Text style={{ borderWidth: 0.5, borderColor: "lightgray" }}></Text>
           <TouchableOpacity style={styles.tabs}>
             <Icon
               name="id-card"
               type="FontAwesome5"
               style={{ color: "#2ccbfe" }}
             />
-            <Text>My Loyality Cards</Text>
+            <Text style={styles.textSize}>My Loyality Cards</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.tabs} onPress={()=>Actions[Routeskey.FAVOURITS_LIST]()}>
+          <Text style={{ borderWidth: 0.5, borderColor: "lightgray" }}></Text>
+
+          <TouchableOpacity style={styles.tabs}  onPress={()=>Actions[Routeskey.FAVOURITS_LIST]()}>
             <Icon name="heart" type="AntDesign" style={{ color: "#fd5280" }} />
-            <Text>My Favourites</Text>
+            <Text style={styles.textSize}>My Favourites</Text>
           </TouchableOpacity>
+
         </View>
         <View>
-         
+          {/* <Recommend /> */}
+          <Accordian />
         </View>
       </View>
     );
@@ -137,7 +147,7 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 30
   },
   tabbox: {
-    width: "85%",
+    width: "90%",
     borderRadius: 10,
     backgroundColor: "#fff",
     height: 80,
@@ -145,14 +155,17 @@ const styles = StyleSheet.create({
     marginTop: -35,
     flexDirection: "row",
     justifyContent: "space-around",
-    padding: 10
+    padding: 10,
   },
   tabs: {
-    borderColor: "#ffff",
-    alignItems: "center"
+    alignItems: "center",
+    alignSelf: "center"
   },
   searchicon: {
     color: "#ffff",
     alignSelf: "center"
+  },
+  textSize: {
+    fontSize: 11
   }
 });

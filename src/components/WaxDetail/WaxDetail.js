@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import { Container, Header, Content, Accordion,Icon } from "native-base";
 import Waxstyle from './WaxStyle';
 import Head from "../Header/Header";
-import RoutesKey from "../../navigation/routeskey"
-import {Actions} from "react-native-router-flux"
+
 import {
     Text,
     View,
@@ -12,6 +11,8 @@ import {
     ScrollView,ImageBackground,
     TouchableOpacity,
   } from 'react-native';
+import waxStyle from "../Waxbeauty/waxStyle";
+import { Actions } from "react-native-router-flux";
 import Routeskey from "../../navigation/routeskey";
 
 export default class WaxDetail extends Component {
@@ -82,9 +83,11 @@ export default class WaxDetail extends Component {
 
                            </View>
                            <View style={{flexDirection:"row",justifyContent:"flex-end"}}>
+                           
+                           
                            <TouchableOpacity onPress={()=>Actions[Routeskey.WAX_BUEATY]()}>
                            <View style={Waxstyle.detail}>
-                           <Text style={Waxstyle.detailtxt}>Detail</Text>
+                            <Text style={Waxstyle.detailtxt}>Detail</Text>
                            </View>
                            </TouchableOpacity>
                            </View>
@@ -102,7 +105,7 @@ export default class WaxDetail extends Component {
                              <Text style={Waxstyle.H11}>Ladie's Waxing - My "Bare" lady Hollywood (Hotwax)</Text>
                              <View style={{flexDirection:"row"}}>
                              <Text style={Waxstyle.H0}>form 300.60 ADE</Text>
-                             <Text style={Waxstyle.H00}> Form 1 hour 30 min</Text>
+                             <Text style={Waxstyle.H00}> Save %10 | 30 mins</Text>
 
                              </View>
                   
@@ -126,7 +129,7 @@ export default class WaxDetail extends Component {
                              <Text style={Waxstyle.H11}>Ladie's Waxing - My "Bare" lady Hollywood (Hotwax)</Text>
                              <View style={{flexDirection:"row"}}>
                              <Text style={Waxstyle.H0}>form 300.60 ADE</Text>
-                             <Text style={Waxstyle.H00}> Form 1 hour 30 min</Text>
+                             <Text style={Waxstyle.H00}> Save %10 | 30 mins</Text>
 
                              </View>
                   
@@ -153,7 +156,7 @@ export default class WaxDetail extends Component {
                                 <Text style={Waxstyle.H11}>Ladie's Waxing - My "Bare" lady Hollywood (Hotwax)</Text>
                                 <View style={{flexDirection:"row"}}>
                                 <Text style={Waxstyle.H0}>form 300.60 ADE</Text>
-                                <Text style={Waxstyle.H00}> Form 1 hour 30 min</Text>
+                                <Text style={Waxstyle.H00}> Save %10 | 30 mins</Text>
 
                                 </View>
                     
@@ -179,22 +182,51 @@ export default class WaxDetail extends Component {
             </View>
                    
             </View>
-                    <View style={{marginTop:-20,width:"80%",alignSelf:"center"}}>
+                    <View style={{marginTop:-20,width:"90%",alignSelf:"center"}}>
                 <ScrollView horizontal={true} style={{marginBottom:2}} >
                    <TouchableOpacity>
-                       <View style={{
-                            backgroundColor:"#fff",
-                            alignItems:"center",
-                            borderRadius:5,
-                            paddingHorizontal:10,
-                            marginHorizontal:10,
-                            elevation:2,
-                            borderWidth:2,
-                            borderColor:""                            
-
-                       }}>
-                            <Icon name='plus' style={{color:"#07abd9",fontSize:20,paddingVertical:10,}} type="AntDesign" />
-                        <Text style={Waxstyle.H1}>All</Text>
+                       <View style={(true)?Waxstyle.card:Waxstyle.cardcolor}>
+                           <Image
+                           style={Waxstyle.iconimage}
+                           source={require('../../assets/images/boxes.png')}
+                           /> 
+                            <Text style={Waxstyle.cardtxt}>All</Text>
+                       </View>
+                   </TouchableOpacity>
+                   <TouchableOpacity>
+                       <View style={(false)?Waxstyle.card:Waxstyle.cardcolor}>
+                           <Image
+                           style={Waxstyle.iconimage}
+                           source={require('../../assets/images/hair.png')}
+                           /> 
+                            <Text style={Waxstyle.cardtxtsel}>Hair</Text>
+                       </View>
+                   </TouchableOpacity>
+                   <TouchableOpacity>
+                       <View style={(true)?Waxstyle.card:Waxstyle.cardcolor}>
+                           <Image
+                           style={Waxstyle.iconimage}
+                           source={require('../../assets/images/nails.png')}
+                           /> 
+                            <Text style={Waxstyle.cardtxt}>Nails</Text>
+                       </View>
+                   </TouchableOpacity>
+                   <TouchableOpacity>
+                       <View style={(true)?Waxstyle.card:Waxstyle.cardcolor}>
+                           <Image
+                           style={Waxstyle.iconimage}
+                           source={require('../../assets/images/hairremove.png')}
+                           /> 
+                            <Text style={Waxstyle.cardtxt}>Hair Removal</Text>
+                       </View>
+                   </TouchableOpacity>
+                   <TouchableOpacity>
+                       <View style={(true)?Waxstyle.card:Waxstyle.cardcolor}>
+                           <Image
+                           style={Waxstyle.iconimage}
+                           source={require('../../assets/images/message.png')}
+                           /> 
+                            <Text style={Waxstyle.cardtxt   }>Message</Text>
                        </View>
                    </TouchableOpacity>
 
@@ -203,27 +235,132 @@ export default class WaxDetail extends Component {
                     <View style={Waxstyle.high1}>
                         <View style={{flexDirection:"row",justifyContent:"space-between"}}>
                             <View style={{flexDirection:"row",}}>
-                        <Text style={Waxstyle.blue}>Highligths</Text>
-                        <Text style={Waxstyle.H2}>(04)</Text>
+                        <Text style={Waxstyle.blue}>Ladies - Hairdressing</Text>
+                        <Text style={Waxstyle.H2}>(03)</Text>
 
                             </View>
                             <View>
-                            <Icon name='up' style={{color:"#b2b2b2",fontSize:20,paddingVertical:10,paddingHorizontal:10,}} type="AntDesign" />
+                            <Icon name='down' style={{color:"#b2b2b2",fontSize:20,paddingVertical:10,paddingHorizontal:10,}} type="AntDesign" />
                             </View>
                         </View>
                     </View>
-                    <View style={Waxstyle.high1}>
-                        <View style={{flexDirection:"row",justifyContent:"space-between"}}>
-                            <View style={{flexDirection:"row",}}>
-                        <Text style={Waxstyle.blue}>Highligths</Text>
-                        <Text style={Waxstyle.H2}>(04)</Text>
+                   {/* bottomm */}
 
-                            </View>
-                            <View>
-                            <Icon name='up' style={{color:"#b2b2b2",fontSize:20,paddingVertical:10,paddingHorizontal:10,}} type="AntDesign" />
-                            </View>
+                   <View style={Waxstyle.highMain}>
+
+                <View style={Waxstyle.high1}>
+                    <View style={{flexDirection:"row",justifyContent:"space-between"}}>
+                        <View style={{flexDirection:"row",}}>
+                    <Text style={Waxstyle.blue}>Highligths</Text>
+                    <Text style={Waxstyle.H2}>(04)</Text>
+
+                        </View>
+                        <View>
+                        <Icon name='up' style={{color:"#b2b2b2",fontSize:20,paddingVertical:10,paddingHorizontal:10,}} type="AntDesign" />
                         </View>
                     </View>
+                </View>
+        {/* sub */}
+        <View>
+
+        <View style={Waxstyle.sub}>
+            <View style={Waxstyle.align}>
+                <View style={{flexDirection:"column",flex:1,paddingVertical:10,paddingHorizontal:2}}>
+                <View >
+                <Text style={Waxstyle.H11}>Ladie's Waxing - My "Bare" lady Hollywood (Hotwax)</Text>
+                <View style={{flexDirection:"row"}}>
+                <Text style={Waxstyle.H0}>form 300.60 ADE</Text>
+                <Text style={Waxstyle.H00}> Form 1 hour 30 min</Text>
+
+                </View>
+
+
+                </View>
+                </View>
+                <View style={{backgroundColor:"#07adb9",
+                justifyContent:"center",
+                paddingHorizontal:2,
+                borderTopRightRadius:10,
+                borderBottomRightRadius:10,
+                }}>
+                <Icon name='check' style={{color:"#fff",fontSize:20,paddingVertical:10,}} type="AntDesign" />
+                </View>
+            </View>
+        </View>
+
+        <View style={Waxstyle.subMain}>
+            
+            <View style={Waxstyle.sub}>
+                <View style={Waxstyle.align}>
+                    <View style={{flexDirection:"column",flex:1,paddingVertical:10,paddingHorizontal:2}}>
+                    <View >
+                    <Text style={Waxstyle.H11}>Ladie's Waxing - My "Bare" lady Hollywood (Hotwax)</Text>
+                    <View style={{flexDirection:"row"}}>
+                    <Text style={Waxstyle.H0}>form 300.60 ADE</Text>
+                    <Text style={Waxstyle.H00}> Form 1 hour 30 min</Text>
+
+                    </View>
+
+                    </View>
+                    </View>
+                    <View style={{
+                        justifyContent:"center",
+                        borderTopRightRadius:10,
+                        borderBottomRightRadius:10,
+                    }}>
+                    <Icon name='down' style={{color:"#b2b2b2",fontSize:20,paddingVertical:10,paddingRight:5}} type="AntDesign" />
+                    </View>
+                </View>
+            </View>
+                    {/* sds */}
+                    <View style={Waxstyle.sub1}>
+                <View style={Waxstyle.align}>
+                    <View style={{flexDirection:"column",flex:1,paddingVertical:10,paddingHorizontal:2}}>
+                    <View >
+                    <Text style={Waxstyle.Hblack}>Chin</Text>
+                    <Text style={Waxstyle.H00}>30 min</Text>
+                    
+
+                    </View>
+                    </View>
+                    <View style={{alignSelf:"center"}}>
+                
+                    <Text style={Waxstyle.H0}>300.60 ADE</Text>
+                    <Text style={Waxstyle.H00}>from 40.0 ADE</Text>
+                    </View>
+                    <View style={{
+                        justifyContent:"center",
+                        borderTopRightRadius:10,
+                        borderBottomRightRadius:10,
+                        elevation:0.7,
+                        margin:2,
+                        padding:1,
+                    }}>
+                        
+                    <Icon name='plus' style={{color:"#b2b2b2",fontSize:20,paddingVertical:10,paddingRight:5}} type="AntDesign" />
+                    </View>
+                </View>
+            </View>
+
+
+        </View>
+
+                    
+                       <View style={Waxstyle.btn}>
+
+                    < Text style={Waxstyle.btntxt}>Check Availbility</Text>
+                        <View style={Waxstyle.btnview}>
+                    <Text style={Waxstyle.subtext}>1</Text>
+                        </View>
+                        <View>
+
+                        </View>
+                       </View>
+
+</View>
+    
+</View>
+                    
          </ScrollView>
     );
   }

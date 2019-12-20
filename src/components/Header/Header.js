@@ -33,14 +33,21 @@ export default class Head extends Component {
         alignContent:"center",
         borderBottomRightRadius:10,
         borderBottomLeftRadius:10,
+        alignItems:"center"
   
         }}>
-            <View style={{flexDirection:"row",}}>
+            <View style={{flexDirection:"row",alignSelf:"center"}}>
             <Icon name='chevron-left' style={{color:"#ffff"}} type="Entypo" />
                 <Text style={{alignSelf:"center", color:"#fff"}}> Back</Text>
             </View>
-            <View >
-                <Text style={{alignSelf:"center", color:"#fff"}}>{this.props.title}</Text>
+            <View style={{alignSelf:"center",marginLeft:-20}}>
+                <Text style={{alignSelf:"center", color:"#fff" }}>{this.props.title}</Text>
+                {
+               (this.props.sub)?
+           
+               <Text style={{alignSelf:"center", color:"#fff",fontSize:12 }}>{this.props.sub}</Text>
+               :null
+           } 
             </View>
             <View style={{}}>
            {
