@@ -26,6 +26,7 @@ import Fav from "../components/Favourite/favouriteblank";
 import Drawers from "./DrawerContent";
 import  Constant from "../constant/Constant";
 import Setting from "../components/Setting/Setting"
+import Mybooking from "../components/Mybooking/Mybooking"
 
 
 
@@ -94,6 +95,8 @@ const RouterFlux = props => {
         <Scene key={Routeskey.FAVOURITS_LIST} component={Favlist} />
         <Scene key={Routeskey.FAVOURITS} component={Fav} /> 
         <Scene key={Routeskey.SETTING} component={Setting} /> 
+        <Scene key={Routeskey.MY_BOOKING} component={Mybooking} /> 
+
 
           </Scene>
         </Drawer>
