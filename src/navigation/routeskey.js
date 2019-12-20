@@ -17,5 +17,8 @@ class Routeskey {
   static WAX_DETAIL="wax_detail"
   static DRAWER="drawer";
   static SETTING="setting"
+  static LEGAL="legal"
+  static CHECKBOOKING="checkbooking"
+  static CHECKEMAIL="checkemail"
 }
 export default Routeskey;

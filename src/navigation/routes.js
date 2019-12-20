@@ -26,6 +26,9 @@ import Fav from "../components/Favourite/favouriteblank";
 import Drawers from "./DrawerContent";
 import  Constant from "../constant/Constant";
 import Setting from "../components/Setting/Setting"
+import Legal from "../components/Legal/Legal"
+import CheckBooking from "../components/CheckEmailAndBooking/Check"
+import CheckEmail from "../components/CheckEmailAndBooking/CheckEmail"
 
 
 
@@ -94,6 +97,9 @@ const RouterFlux = props => {
         <Scene key={Routeskey.FAVOURITS_LIST} component={Favlist} />
         <Scene key={Routeskey.FAVOURITS} component={Fav} /> 
         <Scene key={Routeskey.SETTING} component={Setting} /> 
+        <Scene key={Routeskey.LEGAL} component={Legal} />  
+        <Scene key={Routeskey.CheckBooking} component={CheckBooking} />  
+        <Scene key={Routeskey.CHECKEMAIL} component={CheckEmail} />  
 
           </Scene>
         </Drawer>

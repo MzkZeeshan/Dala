@@ -15,23 +15,63 @@ export default FeedStyle = StyleSheet.create({
     fontSize:18
 
   },
+   Txt: {
+    color: '#fff',
+  },
   TextInputView: {
-    marginTop:10,
     flexDirection: 'row',
-    borderColor: 'gray',
-    borderWidth: 1,
     backgroundColor: 'white',
     width: '90%',
     borderRadius:5,
     paddingHorizontal:10,
     alignItems:'center',
-    
-    
+    marginTop:-10,
+    elevation:2
+  },
+  TextInputView1: {
+    flexDirection: 'row',
+    backgroundColor: 'white',
+    width: '90%',
+    borderRadius:5,
+    paddingHorizontal:10,
+    alignItems:'center',
+    marginVertical:5,
+    elevation:2
+},
+  TextInputView1: {
+    flexDirection: 'row',
+    backgroundColor: 'white',
+    width: '90%',
+    borderRadius:5,
+    paddingHorizontal:10,
+    alignItems:'center',
+    marginVertical:5,
+    elevation:2
+},
+  TextInputView2: {
+    // flexDirection: 'row', 
+    backgroundColor: 'white',
+    width: '90%',
+    borderRadius:5,
+    paddingHorizontal:10,
+    // alignItems:'center',
+    marginVertical:5,
+    elevation:2,
+    height:150,
 },
 TextInputStyle: {
-   flex:1,       
+   flex:1,      
+  // textAlign:"center", 
    color:'grey',
    marginRight:10
+   
+  
+},
+TextInputStyle1: {
+   flex:1,      
+  // textAlign:"center", 
+   color:'grey',
+  //  marginRight:10
    
   
 },
@@ -39,31 +79,18 @@ TextInputStyle: {
     color:"#b2b2b2",fontSize:20,paddingHorizontal:10
 
   },
-  headsub: {
-    alignItems:"center",
-    paddingHorizontal:40,
-    paddingVertical:10,
+  ButtonStyle: {
+    backgroundColor: '#07adb9',
+    width: '90%',
+    alignItems: 'center',
+    color: 'blue',
+    borderRadius: 5,
+    alignSelf:"center",
+    marginVertical: 10,
     justifyContent: 'center',
-  },
-    head: {
-    backgroundColor: '#fff',
-    width: '90%',
-    borderRadius: 5,
-    justifyContent: 'space-between',
-    marginBottom: 10,
-    flexDirection:"row",
-    marginTop:-12,
-    elevation:2,
-    paddingVertical:15
-},
-head1: {
-    backgroundColor: '#fff',
-    marginBottom: 10,
-    width: '90%',
-    borderRadius: 5,
-    justifyContent: 'space-between',
-    flexDirection:"row",
-    elevation:2,
-    paddingVertical:15,
-  },
+    paddingVertical: 15,
+  // marginBottom:-20
+  
+}
+ 
 });
