@@ -21,6 +21,10 @@ class Routeskey {
   static LEGAL="legal"
   static CHECKBOOKING="checkbooking"
   static CHECKEMAIL="checkemail"
+<<<<<<< HEAD
   static BOOKKING_CONFIRM="bookingconfirm"
+=======
+  static ADD_CARD="add_card"
+>>>>>>> cae1f88af005a9dc24959aae6d9943c7b22039da
 }
 export default Routeskey;
