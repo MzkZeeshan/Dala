@@ -15,5 +15,7 @@ class Routeskey {
   static FAVOURITS="favourits"
   static WAX_BUEATY="wax_bueaty"
   static WAX_DETAIL="wax_detail"
+  static DRAWER="drawer";
+  static SETTING="setting"
 }
 export default Routeskey;

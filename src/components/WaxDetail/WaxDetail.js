@@ -12,6 +12,8 @@ import {
     TouchableOpacity,
   } from 'react-native';
 import waxStyle from "../Waxbeauty/waxStyle";
+import { Actions } from "react-native-router-flux";
+import Routeskey from "../../navigation/routeskey";
 
 export default class WaxDetail extends Component {
   render() {
@@ -81,9 +83,13 @@ export default class WaxDetail extends Component {
 
                            </View>
                            <View style={{flexDirection:"row",justifyContent:"flex-end"}}>
+                           
+                           
+                           <TouchableOpacity onPress={()=>Actions[Routeskey.WAX_BUEATY]()}>
                            <View style={Waxstyle.detail}>
                             <Text style={Waxstyle.detailtxt}>Detail</Text>
                            </View>
+                           </TouchableOpacity>
                            </View>
                             </View>
                         </View>
