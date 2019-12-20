@@ -30,6 +30,7 @@ import Mybooking from "../components/Mybooking/Mybooking"
 import Legal from "../components/Legal/Legal"
 import CheckBooking from "../components/CheckEmailAndBooking/Check"
 import CheckEmail from "../components/CheckEmailAndBooking/CheckEmail"
+import Addcard from "../components/AddCard/Addcard";
 
 
 
@@ -103,6 +104,7 @@ const RouterFlux = props => {
         <Scene key={Routeskey.LEGAL} component={Legal} />  
         <Scene key={Routeskey.CheckBooking} component={CheckBooking} />  
         <Scene key={Routeskey.CHECKEMAIL} component={CheckEmail} />  
+        <Scene key={Routeskey.ADD_CARD} component={Addcard} />  
 
           </Scene>
         </Drawer>
