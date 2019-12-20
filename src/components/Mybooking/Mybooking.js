@@ -142,7 +142,7 @@ export default class MyBooking extends Component {
                 // this.props.navigation.navigate('ShareLocation');
               }}
             >
-              <Text style={BookStyle.Txt}>Manage Booking</Text>
+              <Text style={BookStyle.txt}>Manage Booking</Text>
             </TouchableOpacity>
           </View>
         </ScrollView>
