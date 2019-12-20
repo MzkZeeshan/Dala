@@ -73,13 +73,14 @@ const RouterFlux = props => {
           hideNavBar
           drawer
           drawerWidth={Constant.WIDTH*0.7}
+          direction="leftToRight"
         >
           <Scene hideNavBar>
          
 
 
           <Scene key={RoutesKey.SPLASH} component={SplashScreen} initial={true} />
-        <Scene key={RoutesKey.MAIN} component={Main} />
+        <Scene direction="leftToRight" key={RoutesKey.MAIN} component={Main} />
         <Scene key={RoutesKey.COUNTRY} component={Country} />
         <Scene key={RoutesKey.SHARE_LOCATION} component={ShareLocation} />
         <Scene key={RoutesKey.LANGUAGE} component={ChangeLanguage} />

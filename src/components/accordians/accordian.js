@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
 import { Text, View, Image, TouchableOpacity, Dimensions } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient';
+
 export default class Accordian extends Component {
 
-
+    
 
     constructor() {
         super()
@@ -26,11 +27,11 @@ export default class Accordian extends Component {
         return (
             <View style={{marginTop:"9%"}}>
 
-                <View style={style.mainView}>
+                <View style={[style.mainView , {backgroundColor :this.props.barBackgroundColor}]}>
                     <TouchableOpacity activeOpacity={1} onPress={this.openAccordian.bind(this)}>
-                        <LinearGradient colors={['#84e3dd', '#84e3dc', '#22b7ad']} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={style.parentGradient}>
-                            <Text style={style.headText}>Hair</Text>
-                            <Image source={require('../../assets/faltu/larki.png')} resizeMode="cover" style={style.imageIcon} />
+                        <LinearGradient colors={this.props.color} start={{ x: 0, y: 0 }} end={{ x: 1, y: 0 }} style={style.parentGradient}>
+        <Text style={style.headText}>{this.props.name}</Text>
+                            <Image source={this.props.image} resizeMode="cover" style={style.imageIcon} />
                         </LinearGradient>
                     </TouchableOpacity>
                     {
@@ -38,11 +39,13 @@ export default class Accordian extends Component {
                             (
                                 <View
                                     style={style.detailHead}>
-                                    <Text style={style.detailText}>Ladies' Waxing</Text>
-                                    <Text style={style.detailText}>Ladies' Waxing</Text>
-                                    <Text style={style.detailText}>Ladies' Waxing</Text>
-                                    <Text style={style.detailText}>Ladies' Waxing</Text>
-                                    <Text style={style.detailText}>Ladies' Waxing</Text>
+                                    <Text style={[style.detailText , {borderLeftColor :this.props.barListColor}]}>Ladies' Waxing</Text>
+                                    <Text style={[style.detailText , {borderLeftColor :this.props.barListColor}]}>Ladies' Waxing</Text>
+                                    <Text style={[style.detailText , {borderLeftColor :this.props.barListColor}]}>Ladies' Waxing</Text>
+                                    <Text style={[style.detailText , {borderLeftColor :this.props.barListColor}]}>Ladies' Waxing</Text>
+                                    <Text style={[style.detailText , {borderLeftColor :this.props.barListColor}]}>Ladies' Waxing</Text>
+                                    <Text style={[style.detailText , {borderLeftColor :this.props.barListColor}]}>Ladies' Waxing</Text>
+                                    <Text style={[style.detailText , {borderLeftColor :this.props.barListColor}]}>Ladies' Waxing</Text>
                                 </View>
                             ) : null
                     }
@@ -60,7 +63,9 @@ const style = {
         marginBottom: 3,
         color: "white",
         fontSize: 16,
-        borderLeftColor: "#84e3dd"
+        // borderLeftColor: "#84e3dd",
+        // borderLeftColor: this.props.barListColor
+
     },
     imageIcon: {
         height: 100,
@@ -79,7 +84,9 @@ const style = {
         borderRadius: 14
     },
     mainView: {
-        backgroundColor: "#28afa5",
+        // backgroundColor: this.props.barBackgroundColor,
+
+        // backgroundColor:"#28afa5" ,
         // margin: '5%',
         borderRadius: 14,
         width:"85%",
