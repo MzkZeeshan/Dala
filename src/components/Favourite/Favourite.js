@@ -25,7 +25,6 @@ export default class Favourite extends Component {
         <Head title="Favourites" setting={true} iconname="upload" />
         <View style={Favstyle.highMain}>
           <View style={Favstyle.high}>
-            <TouchableOpacity onPress={()=>Actions[Routeskey.SETTING]()}>
             <Icon
               name="search1"
               style={{
@@ -36,7 +35,7 @@ export default class Favourite extends Component {
               }}
               type="AntDesign"
             />
-            </TouchableOpacity>
+
             <TextInput
               style={{ flex: 1 }}
               underlineColorAndroid="transparent"

@@ -60,7 +60,7 @@ export default class HomeScreen extends Component {
 
         <View style={styles.tabbox}>
 
-          <TouchableOpacity style={styles.tabs}>
+          <TouchableOpacity style={styles.tabs} onPress={()=>Actions[Routeskey.MY_BOOKING]() }>
             <Icon
               name="calendar"
               type="AntDesign"

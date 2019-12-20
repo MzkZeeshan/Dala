@@ -25,7 +25,7 @@ export default class WaxDetail extends Component {
           source={require('../../assets/images/booking1.png')}>
             <View style={Waxstyle.align} >
           
-          <TouchableOpacity>
+          <TouchableOpacity onPress={()=>Actions.pop()}>
 
             <View style={{flexDirection:"row",margin:10}}>
             <Icon name='chevron-left' style={{color:"#ffff",}} type="Entypo" />
