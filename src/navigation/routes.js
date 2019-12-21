@@ -49,6 +49,15 @@ const RouterFlux = props => {
   return (
     <Router>
       <Scene key="root" hideNavBar>
+
+
+      <Scene key={RoutesKey.SPLASH} component={SplashScreen} initial={true} />
+        <Scene direction="leftToRight" key={RoutesKey.MAIN} component={Main} />
+        <Scene key={RoutesKey.COUNTRY} component={Country} />
+        <Scene key={RoutesKey.SHARE_LOCATION} component={ShareLocation} />
+        <Scene key={RoutesKey.LANGUAGE} component={ChangeLanguage} />
+        <Scene key={RoutesKey.TURN_ON_NOTIFICATION} component={TurnOnNoti} />
+
         {/* <Scene key={RoutesKey.SPLASH} component={Drawers} initial={true} /> */}
 
         {/* <Scene key={RoutesKey.SPLASH} component={SplashScreen} initial={true} />
@@ -78,13 +87,19 @@ const RouterFlux = props => {
           hideNavBar
           drawer
           drawerWidth={Constant.WIDTH*0.7}
+          direction="leftToRight"
         >
           <Scene hideNavBar>
          
 
 
+<<<<<<< HEAD
           <Scene key={RoutesKey.SPLASH} component={SplashScreen} />
         <Scene key={RoutesKey.MAIN} component={Main} />
+=======
+          <Scene key={RoutesKey.SPLASH} component={SplashScreen} initial={true} />
+        <Scene direction="leftToRight" key={RoutesKey.MAIN} component={Main} />
+>>>>>>> c936e507451094d63ea39e0a962e7e483162eb30
         <Scene key={RoutesKey.COUNTRY} component={Country} />
         <Scene key={RoutesKey.SHARE_LOCATION} component={ShareLocation} />
         <Scene key={RoutesKey.LANGUAGE} component={ChangeLanguage} />

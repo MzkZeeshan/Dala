@@ -89,7 +89,14 @@ export default class HomeScreen extends Component {
         </View>
         <View>
           {/* <Recommend /> */}
-          <Accordian />
+          {/* <Accordian color={['#84e3dd', '#84e3dc', '#22b7ad']}/> */}
+          {/* <Accordian barListColor={"#84e3dd"} barBackgroundColor={"#28afa5"} color={['#84e3dd', '#84e3dc', '#22b7ad']}/> */}
+         
+
+
+          <Accordian name={"Hair"} image={require("../../assets/faltu/larki.png")} barListColor={"#84e3dd"} barBackgroundColor={"#28afa5"} color={['#84e3dd', '#84e3dc', '#22b7ad']}/>
+          <Accordian name={"Face"} image={require("../../assets/faltu/face.png")} barListColor={"#84e3dd"} barBackgroundColor={"#28afa5"} color={['#84e3dd', '#84e3dc', '#22b7ad']}/>
+
         </View>
       </View>
     );
