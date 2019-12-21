@@ -12,6 +12,7 @@ export default BookStyle = StyleSheet.create({
   subtxt: {
     color:"#07adb9",
   },
+  
   txt:{
 color:"#fff"
   },
@@ -92,6 +93,11 @@ color:"#fff"
   },
   bg: {
     width: width,
+    height: height,
+    resizeMode: 'contain',
+  },
+  bg1: {
+    width: width/2,
     height: height,
     resizeMode: 'contain',
   },

@@ -23,5 +23,9 @@ class Routeskey {
   static CHECKEMAIL="checkemail"
   static BOOKKING_CONFIRM="bookingconfirm"
   static ADD_CARD="add_card"
+  static UP_COMMING_BOOKING="upcommingbook"
+  static UP_COMMING_WALLET="upcommingwalet"
+  static PAYMEMT_OPTION="paymentoption"
+  static ALL_BOOKING_SEARCH="allbookingsearch"
 }
 export default Routeskey;

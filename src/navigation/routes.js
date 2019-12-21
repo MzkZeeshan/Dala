@@ -32,6 +32,10 @@ import CheckBooking from "../components/CheckEmailAndBooking/Check"
 import CheckEmail from "../components/CheckEmailAndBooking/CheckEmail"
 import BookingConfirm from "../components/BookingConfirm/BookingConfirm"
 import Addcard from "../components/AddCard/Addcard";
+import Upcomingbook from "../components/Mybooking/UpcomingBook"
+import Upcomingwalet from "../components/Mybooking/UpcomingWalet"
+import Paymentoption from "../components/PaymentOption/paymentoption"
+import Allbookingsearch from "../components/AllBookingSearch/Allbookingsearch"
 
 
 
@@ -79,7 +83,7 @@ const RouterFlux = props => {
          
 
 
-          <Scene key={RoutesKey.SPLASH} component={SplashScreen} initial={true} />
+          <Scene key={RoutesKey.SPLASH} component={SplashScreen} />
         <Scene key={RoutesKey.MAIN} component={Main} />
         <Scene key={RoutesKey.COUNTRY} component={Country} />
         <Scene key={RoutesKey.SHARE_LOCATION} component={ShareLocation} />
@@ -107,6 +111,10 @@ const RouterFlux = props => {
         <Scene key={Routeskey.CHECKEMAIL} component={CheckEmail}  />  
         <Scene key={Routeskey.BOOKKING_CONFIRM} component={BookingConfirm} />  
         <Scene key={Routeskey.ADD_CARD} component={Addcard} />  
+        <Scene key={Routeskey.UP_COMMING_BOOKING} component={Upcomingbook}  />  
+        <Scene key={Routeskey.UP_COMMING_WALLET} component={Upcomingwalet}/>  
+        <Scene key={Routeskey.PAYMEMT_OPTION} component={Paymentoption} />  
+        <Scene key={Routeskey.ALL_BOOKING_SEARCH} component={Allbookingsearch} initial={true}/>  
 
           </Scene>
         </Drawer>

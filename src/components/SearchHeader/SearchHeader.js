@@ -26,59 +26,111 @@ export default class Search extends Component {
   render() {
 
     return (
-        <View style={{flexDirection:"row",
-        justifyContent:"space-between",
+        <View style={{
+          flexDirection:"row",
+          // justifyContent:"space-between",
         backgroundColor:"#07adb9",
-        paddingHorizontal:10,
-        paddingVertical:20,
-        alignContent:"center",
+        paddingHorizontal:5,
+        paddingTop:5,
+        paddingBottom:20,
         borderBottomRightRadius:10,
         borderBottomLeftRadius:10,
-        alignItems:"center"
   
         }}>
-            <View style={{flexDirection:"row",alignSelf:"center"}}>
-            <Icon name='chevron-left' style={{color:"#ffff"}} type="Entypo" />
+            <View style={{}}>
+              <TouchableOpacity>
+
+            <Icon name='chevron-left' style={{color:"#ffff", }} type="Entypo" />
+              </TouchableOpacity>
             
             </View>
-            <View style={{}}>
-            <View style={{
-                marginVertical: 5,
-                flexDirection: 'row',
-                backgroundColor: 'white',
-                borderRadius: 5,
-                paddingHorizontal: 10,
-                alignItems: 'center',
-                elevation: 1,
-                width: '90%',
-                shadowColor: "#000",
-            elevation: 3,
-            }}>
-                  <Icon
-                    style={{
-                      fontSize: 24,
-                      color:"#07adb9" ,
+           <View style={{ flex:1 }}>
+                  <View style={{
+                      backgroundColor: '#3dc0c9',
+                      flexDirection:"row",
+                      color: 'blue',
+                      borderRadius: 5,
+                      height:40,
+                      alignItems:"center",
+                      marginVertical:2
+                  }}>
+                    <Icon
+                      name="search1"
+                      style={{
+                        color: "#fff",
+                        fontSize: 18,
+                        paddingVertical: 5,
+                        paddingHorizontal: 5
+                      }}
+                      type="AntDesign"
+                    />
 
-                    }}
-                    name="lock"
-                    type="MaterialCommunityIcons"
-                  />
-                  <TextInput
-                    underlineColorAndroid="transparent"
-                    style={{
-                      flex: 1,
-                      color: 'grey',
-                      marginRight: 10,
-                    }}
-                    maxLength={30}
-                    placeholder="Password"
-                    secureTextEntry={true}
-                    placeholderTextColor="#b2b2b2"
-                    onChangeText={this.onChange.bind(this, "search")}
-                    // value={address}
-                  />
-             
-            </View>
+                    <TextInput
+                      style={{ flex: 1,color:"#fff" }}
+                      underlineColorAndroid="transparent"
+                      placeholder="Search"
+                      placeholderTextColor="#f0f0f0"
+                      onChangeText={this.onChange.bind(this, "search")}
+                    />
+                  </View>
+                  <View style={{
+                      backgroundColor: '#3dc0c9',
+                      flexDirection:"row",
+                      color: 'blue',
+                      height:40,
+                      borderRadius: 5,
+                      alignItems:"center",
+                      marginVertical:2
+                  }}>
+                    <Icon
+                      name="location-pin"
+                      style={{
+                        color: "#fff",
+                        fontSize: 18,
+                        paddingVertical: 5,
+                        paddingHorizontal: 5
+                      }}
+                      type="Entypo"
+                    />
+
+                    <TextInput
+                      style={{ flex: 1,color:"#fff" }}
+                      underlineColorAndroid="transparent"
+                      placeholder="UAE"
+                      placeholderTextColor="#fff"
+                      onChangeText={this.onChange.bind(this, "search")}
+                    />
+                  </View>
+                  <View style={{
+                      backgroundColor: '#3dc0c9',
+                      flexDirection:"row",
+                      color: 'blue',
+                      height:40,
+                      borderRadius: 5,
+                      alignItems:"center",
+                      marginVertical:2
+                  }}>
+                    <Icon
+                      name="calendar"
+                      style={{
+                        color: "#fff",
+                        fontSize: 18,
+                        paddingVertical: 5,
+                        paddingHorizontal: 5
+                      }}
+                      type="Entypo"
+                    />
+
+                    <TextInput
+                      style={{ flex: 1,color:"#fff" }}
+                      underlineColorAndroid="transparent"
+                      placeholder="Any time"
+                      placeholderTextColor="#f0f0f0"
+                      onChangeText={this.onChange.bind(this, "search")}
+                    />
+                  </View>
+           </View>
+      
         </View>
     );
   }
