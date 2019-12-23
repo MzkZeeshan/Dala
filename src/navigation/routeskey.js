@@ -27,5 +27,7 @@ class Routeskey {
   static UP_COMMING_WALLET="upcommingwalet"
   static PAYMEMT_OPTION="paymentoption"
   static ALL_BOOKING_SEARCH="allbookingsearch"
+  static CHECKOUT="checkout"
+  static ADD_CARD_GIFT="addcardgift"
 }
 export default Routeskey;

@@ -36,6 +36,8 @@ import Upcomingbook from "../components/Mybooking/UpcomingBook"
 import Upcomingwalet from "../components/Mybooking/UpcomingWalet"
 import Paymentoption from "../components/PaymentOption/paymentoption"
 import Allbookingsearch from "../components/AllBookingSearch/Allbookingsearch"
+import Checkout from "../components/Checkout/checkout"
+import AddCardGift from "../components/AddGiftCard/AddGiftCard"
 
 
 
@@ -51,7 +53,7 @@ const RouterFlux = props => {
       <Scene key="root" hideNavBar>
 
 
-      <Scene key={RoutesKey.SPLASH} component={SplashScreen} initial={true} />
+      <Scene key={RoutesKey.SPLASH} component={SplashScreen} />
         <Scene direction="leftToRight" key={RoutesKey.MAIN} component={Main} />
         <Scene key={RoutesKey.COUNTRY} component={Country} />
         <Scene key={RoutesKey.SHARE_LOCATION} component={ShareLocation} />
@@ -93,13 +95,8 @@ const RouterFlux = props => {
          
 
 
-<<<<<<< HEAD
           <Scene key={RoutesKey.SPLASH} component={SplashScreen} />
-        <Scene key={RoutesKey.MAIN} component={Main} />
-=======
-          <Scene key={RoutesKey.SPLASH} component={SplashScreen} initial={true} />
         <Scene direction="leftToRight" key={RoutesKey.MAIN} component={Main} />
->>>>>>> c936e507451094d63ea39e0a962e7e483162eb30
         <Scene key={RoutesKey.COUNTRY} component={Country} />
         <Scene key={RoutesKey.SHARE_LOCATION} component={ShareLocation} />
         <Scene key={RoutesKey.LANGUAGE} component={ChangeLanguage} />
@@ -128,8 +125,10 @@ const RouterFlux = props => {
         <Scene key={Routeskey.ADD_CARD} component={Addcard} />  
         <Scene key={Routeskey.UP_COMMING_BOOKING} component={Upcomingbook}  />  
         <Scene key={Routeskey.UP_COMMING_WALLET} component={Upcomingwalet}/>  
-        <Scene key={Routeskey.PAYMEMT_OPTION} component={Paymentoption} />  
-        <Scene key={Routeskey.ALL_BOOKING_SEARCH} component={Allbookingsearch} initial={true}/>  
+        <Scene key={Routeskey.PAYMEMT_OPTION} component={Paymentoption}   />  
+        <Scene key={Routeskey.ALL_BOOKING_SEARCH} component={Allbookingsearch}/>  
+        <Scene key={Routeskey.CHECKOUT} component={Checkout}  />  
+        <Scene key={Routeskey.ADD_CARD_GIFT} component={AddCardGift} initial={true}  />  
 
           </Scene>
         </Drawer>
