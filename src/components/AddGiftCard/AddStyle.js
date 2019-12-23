@@ -8,7 +8,7 @@ const height = Dimensions.get('window').height;
 export default AddStyle = StyleSheet.create({
   View: {
     alignItems: 'center',
-  // marginTop:-40,
+  // marginTop:-10,
     flex:1
   },
 

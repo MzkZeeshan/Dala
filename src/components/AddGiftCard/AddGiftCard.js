@@ -40,7 +40,6 @@ export default class AddCardGift extends Component {
               // this.props.navigation.navigate('Turnonnoti');
             }}
           >
-            <Text> </Text>
           </TouchableOpacity>
           <View style={AddStyle.viewBoxTop}>
             <Image
@@ -56,6 +55,9 @@ export default class AddCardGift extends Component {
               <Text style={AddStyle.H1}>Add Gift Cards or Promo Code </Text>
               <View>
               
+              <Text style={AddStyle.textbom}>
+                  Gift Code or Promo Code
+                  </Text>
                 <View style={AddStyle.TextInputView}>
                 
                   <TextInput
