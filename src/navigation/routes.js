@@ -38,6 +38,8 @@ import Paymentoption from "../components/PaymentOption/paymentoption"
 import Allbookingsearch from "../components/AllBookingSearch/Allbookingsearch"
 import Checkout from "../components/Checkout/checkout"
 import AddCardGift from "../components/AddGiftCard/AddGiftCard"
+import CancellationPolicy from "../components/CancellationPolicy/CancellationPolicy"
+import OrderDetail from "../components/OrderDetail/OrderDetail"
 
 
 
@@ -128,7 +130,9 @@ const RouterFlux = props => {
         <Scene key={Routeskey.PAYMEMT_OPTION} component={Paymentoption}   />  
         <Scene key={Routeskey.ALL_BOOKING_SEARCH} component={Allbookingsearch}/>  
         <Scene key={Routeskey.CHECKOUT} component={Checkout}  />  
-        <Scene key={Routeskey.ADD_CARD_GIFT} component={AddCardGift} initial={true}  />  
+        <Scene key={Routeskey.ADD_CARD_GIFT} component={AddCardGift}  />  
+        <Scene key={Routeskey.CANCELLATION_POLICY} component={CancellationPolicy}  />  
+        <Scene key={Routeskey.ORDER_DEATAIL} component={OrderDetail} initial={true}  />  
 
           </Scene>
         </Drawer>

@@ -29,5 +29,7 @@ class Routeskey {
   static ALL_BOOKING_SEARCH="allbookingsearch"
   static CHECKOUT="checkout"
   static ADD_CARD_GIFT="addcardgift"
+  static CANCELLATION_POLICY="cancellationpolicy"
+  static ORDER_DEATAIL="orderdetail"
 }
 export default Routeskey;
